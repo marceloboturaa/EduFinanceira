@@ -1,0 +1,288 @@
+/* Importação de Fonte Externa */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Variáveis de Cores e Estilo */
+:root {
+    --primary: #27ae60;
+    --primary-dark: #1e8449;
+    --dark: #2c3e50;
+    --light: #f8f9fa;
+    --white: #ffffff;
+    --shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Reset Geral */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+/* --- Navegação --- */
+nav {
+    background: var(--white);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo { 
+    font-size: 1.5rem; 
+    font-weight: 700; 
+    color: var(--primary); 
+}
+
+.nav-links { 
+    display: flex; 
+    list-style: none; 
+    gap: 20px; 
+}
+
+.nav-links a { 
+    text-decoration: none; 
+    color: var(--dark); 
+    font-weight: 500; 
+    transition: 0.3s; 
+}
+
+.nav-links a:hover { 
+    color: var(--primary); 
+}
+
+/* --- Header --- */
+header {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+
+.container { 
+    max-width: 1200px; 
+    margin: auto; 
+    padding: 50px 20px; 
+}
+
+/* --- Carrossel Infinito (Home) --- */
+.slider {
+    overflow: hidden;
+    background: var(--white);
+    padding: 40px 0;
+    white-space: nowrap;
+    position: relative;
+    border-bottom: 1px solid #eee;
+}
+
+.slider-track {
+    display: inline-block;
+    animation: scroll 60s linear infinite;
+}
+
+.slider-track img {
+    width: 280px;
+    height: 180px;
+    object-fit: cover;
+    margin: 0 15px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+/* --- Seção BNCC (Cards Informativos) --- */
+.bncc-card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: -60px; /* Sobrepõe levemente o header */
+    box-shadow: var(--shadow);
+    position: relative;
+    z-index: 10;
+}
+
+.bncc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.bncc-item {
+    padding: 20px;
+    border-left: 4px solid var(--primary);
+    background: #f1f8f4;
+    border-radius: 0 15px 15px 0;
+}
+
+/* --- Galeria Masonry (Estilo Pinterest) --- */
+.masonry-gallery {
+    column-count: 3;
+    column-gap: 20px;
+    padding: 20px 0;
+}
+
+.gallery-item {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: 0.4s ease;
+    background: white;
+}
+
+.gallery-item img { 
+    width: 100%; 
+    display: block; 
+    transition: 0.5s;
+}
+
+.gallery-item:hover { 
+    transform: translateY(-8px) scale(1.02); 
+}
+
+/* --- Responsividade (Ajustes para Tablet e Celular) --- */
+
+/* Tablets */
+@media (max-width: 900px) {
+    .masonry-gallery { 
+        column-count: 2; 
+    }
+    header {
+        padding: 70px 20px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+    .masonry-gallery { 
+        column-count: 1; 
+    }
+    .nav-links {
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+    .bncc-card {
+        padding: 20px;
+    }
+}
+/* Estilos Extras para Conteúdos */
+.search-container {
+    margin: -30px auto 40px;
+    max-width: 600px;
+    position: relative;
+    z-index: 20;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 15px 25px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: var(--shadow);
+    font-size: 1rem;
+    outline: none;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.video-card {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: 0.3s;
+}
+
+.video-card:hover { transform: translateY(-5px); }
+
+.video-card iframe { width: 100%; height: 200px; border: none; }
+
+.video-info { padding: 15px; }
+
+.video-info h4 { color: var(--primary); margin-bottom: 5px; }
+
+.podcast-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+@media (max-width: 600px) {
+    .podcast-card { flex-direction: column; text-align: center; }
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+}
+
+.data-table th { background: var(--primary); color: white; padding: 12px; }
+.data-table td { padding: 12px; border-bottom: 1px solid #eee; }
+
+/* Estilos para a Tabela e Listas Acadêmicas */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: white;
+    font-size: 0.9rem;
+}
+.data-table th { background: var(--primary); color: white; padding: 12px; text-align: left; }
+.data-table td { padding: 10px; border-bottom: 1px solid #eee; }
+
+.history-section {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: var(--shadow);
+}
+
+.download-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn-download {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background: var(--light);
+    color: var(--primary);
+    text-decoration: none;
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.btn-download:hover { background: var(--primary); color: white; }

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdos Acadêmicos - EduFinanceira</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">EduFinanceira</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="conteudos.html">Conteúdos</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Biblioteca de Educação Financeira</h1>
+        <p>História, Dados Técnicos e Materiais de Apoio</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="search-container" style="margin-bottom: 40px; text-align: center;">
+            <input type="text" id="searchInput" placeholder="Busque por: Império, Inflação, Real, PDF, Vídeo..." onkeyup="filterContent()" 
+            style="width: 100%; max-width: 600px; padding: 15px; border-radius: 25px; border: 1px solid #ddd; font-family: 'Poppins', sans-serif; outline: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        </div>
+
+        <section class="filterable-item" style="margin-bottom: 50px;">
+            
+            <div class="video-card" style="max-width: 800px; margin: auto;">
+                <iframe src="https://www.youtube.com/embed/-7Az6V2oAD4" style="width: 100%; height: 450px; border-radius: 15px; border: none;" allowfullscreen></iframe>
+                <div class="video-info">
+                    <h4>Banco Central do Brasil</h4>
+                    <p>Conheça os padrões monetários do Brasil desde 1822 e descubra qual moeda circulou por mais tempo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="history-section filterable-item">
+            <h2>📜 História do Dinheiro no Brasil</h2>
+            <p>Desde a colonização, o Brasil passou por diversas reformas monetárias para combater a inflação e estabilizar a economia.</p>
+            <div style="overflow-x: auto;">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Período</th>
+                            <th>Moeda</th>
+                            <th>Contexto Histórico</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1500 - 1942</td><td>Réis (Real Português)</td><td>Vigorou desde o início da colonização.</td></tr>
+                        <tr><td>1942 - 1967</td><td>Cruzeiro (Cr$)</td><td>Criado por Getúlio Vargas (Corte de zeros do Réis).</td></tr>
+                        <tr><td>1967 - 1970</td><td>Cruzeiro Novo (NCr$)</td><td>Padrão transitório para adaptação da população.</td></tr>
+                        <tr><td>1986 - 1989</td><td>Cruzado (Cz$)</td><td>Plano Cruzado (Governo Sarney) - combate à inflação.</td></tr>
+                        <tr><td>1993 - 1994</td><td>Cruzeiro Real (CR$)</td><td>Preparação para o Plano Real (Itamar Franco).</td></tr>
+                        <tr><td>1994 - Hoje</td><td>Real (R$)</td><td>Estabilização econômica definitiva e controle da inflação.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="history-section filterable-item">
+            <h2>💰 Guia Técnico: Moedas do Real (2ª Família)</h2>
+            <p>Especificações oficiais das moedas atualmente em circulação no Brasil:</p>
+            <div style="overflow-x: auto;">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Valor</th>
+                            <th>Personagem</th>
+                            <th>Material</th>
+                            <th>Diâmetro</th>
+                            <th>Borda</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>5 centavos</td><td>Tiradentes</td><td>Aço rev. cobre</td><td>22 mm</td><td>Lisa</td></tr>
+                        <tr><td>10 centavos</td><td>Dom Pedro I</td><td>Aço rev. bronze</td><td>20 mm</td><td>Serrilhada</td></tr>
+                        <tr><td>25 centavos</td><td>Deodoro da Fonseca</td><td>Aço rev. bronze</td><td>25 mm</td><td>Serrilhada</td></tr>
+                        <tr><td>50 centavos</td><td>Barão do Rio Branco</td><td>Aço inoxidável</td><td>23 mm</td><td>Inscrição</td></tr>
+                        <tr><td>1 Real</td><td>Efígie da República</td><td>Inox (Núcleo) / Bronze (Anel)</td><td>27 mm</td><td>Serrilhada Int.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><small>Fonte: <a href="https://www.bcb.gov.br/cedulasemoedas/moedasemitidas" target="_blank">Banco Central do Brasil</a></small></p>
+        </section>
+
+        <section style="margin-bottom: 50px;">
+            <h2>🎥 Vídeo Aulas e Documentários</h2>
+            <div class="video-grid">
+                <div class="video-card filterable-item">
+                    <iframe src="https://www.youtube.com/embed/6aolLKTHo-I"></iframe>
+                    <div class="video-info">
+                        <h4>COMO É FABRICADO O SEU DINHEIRO - Manual do Mundo</h4>
+                        <p>Veja o processo detalhado de fabricação das cédulas na Casa da Moeda.</p>
+                    </div>
+                </div>
+                <div class="video-card filterable-item">
+                    <iframe src="https://www.youtube.com/embed/U1Uqgg3W_qQ"></iframe>
+                    <div class="video-info">
+                        <h4>Patrícia Abravanel visita a Casa da Moeda</h4>
+                        <p>Uma reportagem mostrando os bastidores da produção do nosso dinheiro.</p>
+                    </div>
+                </div>
+                <div class="video-card filterable-item">
+                    <iframe src="https://www.youtube.com/embed/dvoJPJv-DOs"></iframe>
+                    <div class="video-info">
+                        <h4>Otávio Mesquita visita a Casa da Moeda</h4>
+                        <p>Curiosidades e a segurança por trás da fabricação de moedas.</p>
+                    </div>
+                </div>
+                <div class="video-card filterable-item">
+                    <iframe src="https://www.slideshare.net/slideshow/embed_code/key/OsawJ4Jc9zYof" allowfullscreen></iframe>
+                    <div class="video-info">
+                        <h4>📊 Apresentação: Dinheiro no Brasil</h4>
+                        <p>Aprenda de forma interativa sobre a evolução da economia nacional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="filterable-item" style="margin-bottom: 50px;">
+            <h2>🎙️ Podcast em Destaque: Ciência USP</h2>
+            <div class="podcast-card" style="display: flex; align-items: center; gap: 20px; background: #fff; padding: 20px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                <img src="imagens/subcanal_ciencia_usp-150x150.jpg" width="100" alt="USP" style="border-radius: 10px;">
+                <div style="flex: 1;">
+                    <h4>História das Moedas - Quando surgiram?</h4>
+                    <p>Uma viagem histórica sobre a trajetória do dinheiro.</p>
+                    <audio controls style="width: 100%; margin-top: 10px;">
+                        <source src="Audio/DESTAQUE-CUSP-04-20-MARÇO-HISTÓRIADASMOEDAS_10min.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </section>
+
+        <section class="history-section filterable-item">
+            <h2>📄 Materiais de Estudo e Arquivos</h2>
+            <div class="download-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+                <a href="pdf/grecia.pdf" class="btn-download">📄 História: Grécia Antiga</a>
+                <a href="pdf/roma.pdf" class="btn-download">📄 História: Império Romano</a>
+                <a href="pdf/guia.pdf" class="btn-download">📄 Guia Finanças PDF</a>
+                <a href="slides/apresentacao.pptx" class="btn-download">📊 Slides da Aula (.PPTX)</a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Projeto Educação Financeira - Fontes: Banco Central, Casa da Moeda e USP.</p>
+    </footer>
+
+    <script>
+        function filterContent() {
+            let input = document.getElementById('searchInput').value.toLowerCase();
+            let items = document.querySelectorAll('.filterable-item');
+
+            items.forEach(item => {
+                let text = item.innerText.toLowerCase();
+                if (text.includes(input)) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
