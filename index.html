@@ -1,61 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Educação Financeira - BNCC</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Educação Financeira - BNCC</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    <nav>
-        <div class="logo">EduFinanceira</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Início</a></li>
-            <li><a href="galeria.html">Galeria</a></li>
-            <li><a href="conteudos.html">Conteúdos</a></li>
-        </ul>
-    </nav>
 
-    <header>
-        <h1 data-aos="zoom-in">Educação Financeira na Escola</h1>
-        <p data-aos="fade-up" data-aos-delay="200">Desenvolvendo cidadãos conscientes e preparados para o futuro.</p>
-    </header>
 
-    <a href="galeria.html" title="Clique para ver a galeria completa" style="text-decoration: none; display: block;">
-        <section class="slider">
-            <div class="slider-track" id="slider-home">
-                </div>
-        </section>
-    </a>
+<!-- NAVBAR -->
+<nav>
 
-    <div class="container">
-        <article class="bncc-card" data-aos="fade-up">
-            <h2>A Importância da Disciplina (BNCC)</h2>
-            <p>Conforme a <b>Base Nacional Comum Curricular (BNCC)</b>, a Educação Financeira é um tema contemporâneo transversal que deve integrar diferentes disciplinas.</p>
-            
-            <div class="bncc-grid">
-                <div class="bncc-item" data-aos="fade-right" data-aos-delay="100">
-                    <h3>Tomada de Decisão</h3>
-                    <p>Ensina a avaliar riscos e benefícios, promovendo o consumo responsável em vez do impulsivo.</p>
-                </div>
-                <div class="bncc-item" data-aos="fade-up" data-aos-delay="200">
-                    <h3>Contexto Social</h3>
-                    <p>Discute a relação com o dinheiro não apenas como soma, mas como impacto social e ambiental.</p>
-                </div>
-                <div class="bncc-item" data-aos="fade-left" data-aos-delay="300">
-                    <h3>Projeto de Vida</h3>
-                    <p>Ajuda o estudante a planejar seus sonhos, estabelecendo metas de curto, médio e longo prazo.</p>
-                </div>
-            </div>
-        </article>
-    </div>
+<div class="logo">EduFinanceira</div>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({ duration: 800, once: true });
-    </script>
-    <script src="js/script.js"></script>
+<div class="menu-toggle">☰</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Início</a></li>
+<li><a href="galeria.html">Galeria</a></li>
+<li><a href="conteudos.html">Conteúdos</a></li>
+
+</ul>
+
+</nav>
+
+
+
+<header>
+
+<h1>Educação Financeira na Escola</h1>
+
+<p>Desenvolvendo cidadãos conscientes e preparados para o futuro.</p>
+
+</header>
+
+
+<a href="galeria.html">
+
+<section class="slider">
+
+<div class="slider-track" id="slider-home"></div>
+
+</section>
+
+</a>
+
+
+
+<div class="container">
+
+<article class="bncc-card">
+
+<h2>A Importância da Disciplina (BNCC)</h2>
+
+<p>
+A Educação Financeira é um tema transversal da Base Nacional Comum Curricular.
+</p>
+
+<div class="bncc-grid">
+
+<div class="bncc-item">
+
+<h3>Tomada de decisão</h3>
+
+<p>Ensina o estudante a avaliar riscos e benefícios.</p>
+
+</div>
+
+
+<div class="bncc-item">
+
+<h3>Contexto social</h3>
+
+<p>Relaciona consumo com impacto social e ambiental.</p>
+
+</div>
+
+
+<div class="bncc-item">
+
+<h3>Projeto de vida</h3>
+
+<p>Ajuda o estudante a planejar metas financeiras.</p>
+
+</div>
+
+</div>
+
+</article>
+
+</div>
+
+
+<footer>
+
+<p>© 2026 Projeto Educação Financeira</p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+<script>
+
+const toggle=document.querySelector(".menu-toggle");
+const menu=document.querySelector(".nav-links");
+
+toggle.onclick=()=>{
+
+menu.classList.toggle("active");
+
+}
+
+</script>
+
 </body>
+
 </html>

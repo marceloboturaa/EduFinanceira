@@ -1,288 +1,995 @@
-/* Importação de Fonte Externa */
+/* ============================= */
+/* EDUFINANCEIRA - CSS PRINCIPAL */
+/* ============================= */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-/* Variáveis de Cores e Estilo */
-:root {
-    --primary: #27ae60;
-    --primary-dark: #1e8449;
-    --dark: #2c3e50;
-    --light: #f8f9fa;
-    --white: #ffffff;
-    --shadow: 0 10px 30px rgba(0,0,0,0.1);
+:root{
+
+--primary:#2563eb;
+--primary-dark:#1d4ed8;
+
+--dark:#2c3e50;
+--light:#f8f9fa;
+--white:#ffffff;
+
+--shadow:0 10px 30px rgba(0,0,0,0.1);
+
 }
 
-/* Reset Geral */
-* { 
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--light);
-    color: var(--dark);
-    line-height: 1.6;
+body{
+
+font-family:'Poppins',sans-serif;
+background:var(--light);
+color:var(--dark);
+line-height:1.6;
+
 }
 
-/* --- Navegação --- */
-nav {
-    background: var(--white);
-    padding: 1rem 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+
+/* ================= NAVBAR ================= */
+
+nav{
+
+background:var(--white);
+
+padding:1rem 5%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+flex-wrap:wrap;
+
+position:sticky;
+top:0;
+
+z-index:1000;
+
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+
 }
 
-.logo { 
-    font-size: 1.5rem; 
-    font-weight: 700; 
-    color: var(--primary); 
+.logo{
+
+font-size:1.6rem;
+font-weight:700;
+
+color:var(--primary);
+
 }
 
-.nav-links { 
-    display: flex; 
-    list-style: none; 
-    gap: 20px; 
+.nav-links{
+
+display:flex;
+list-style:none;
+
+gap:25px;
+
+flex-wrap:wrap;
+
 }
 
-.nav-links a { 
-    text-decoration: none; 
-    color: var(--dark); 
-    font-weight: 500; 
-    transition: 0.3s; 
+/* LINKS DO MENU */
+
+.nav-links a{
+
+text-decoration:none;
+color:var(--dark);
+font-weight:500;
+
+padding:6px 4px;
+
+position:relative;
+
+transition:color .3s;
+
 }
 
-.nav-links a:hover { 
-    color: var(--primary); 
+/* ANIMAÇÃO LINHA */
+
+.nav-links a::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+bottom:-4px;
+
+width:0;
+height:2px;
+
+background:var(--primary);
+
+transition:width .3s ease;
+
 }
 
-/* --- Header --- */
-header {
-    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-    color: white;
-    padding: 100px 20px;
-    text-align: center;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+.nav-links a:hover::after{
+
+width:100%;
+
 }
 
-.container { 
-    max-width: 1200px; 
-    margin: auto; 
-    padding: 50px 20px; 
+.nav-links a:hover{
+
+color:var(--primary);
+
 }
 
-/* --- Carrossel Infinito (Home) --- */
-.slider {
-    overflow: hidden;
-    background: var(--white);
-    padding: 40px 0;
-    white-space: nowrap;
-    position: relative;
-    border-bottom: 1px solid #eee;
+
+/* MENU Retratio */
+.menu-toggle{
+
+display:none;
+
+font-size:1.8rem;
+cursor:pointer;
+
 }
 
-.slider-track {
-    display: inline-block;
-    animation: scroll 60s linear infinite;
+@media(max-width:768px){
+
+.menu-toggle{
+display:block;
 }
 
-.slider-track img {
-    width: 280px;
-    height: 180px;
-    object-fit: cover;
-    margin: 0 15px;
-    border-radius: 12px;
-    box-shadow: var(--shadow);
+.nav-links{
+
+display:none;
+flex-direction:column;
+
+width:100%;
+background:white;
+
+padding:10px 0;
+
 }
 
-@keyframes scroll {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
+.nav-links.active{
+display:flex;
 }
 
-/* --- Seção BNCC (Cards Informativos) --- */
-.bncc-card {
-    background: var(--white);
-    border-radius: 20px;
-    padding: 40px;
-    margin-top: -60px; /* Sobrepõe levemente o header */
-    box-shadow: var(--shadow);
-    position: relative;
-    z-index: 10;
+}
+/* ================= HEADER ================= */
+
+header{
+
+background:linear-gradient(135deg,var(--primary),var(--primary-dark));
+
+color:white;
+
+padding:100px 20px;
+
+text-align:center;
+
+clip-path:polygon(0 0,100% 0,100% 90%,0 100%);
+
 }
 
-.bncc-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 30px;
+header h1{
+
+font-size:2.2rem;
+margin-bottom:10px;
+
 }
 
-.bncc-item {
-    padding: 20px;
-    border-left: 4px solid var(--primary);
-    background: #f1f8f4;
-    border-radius: 0 15px 15px 0;
+header p{
+
+opacity:0.9;
+
 }
 
-/* --- Galeria Masonry (Estilo Pinterest) --- */
-.masonry-gallery {
-    column-count: 3;
-    column-gap: 20px;
-    padding: 20px 0;
+
+/* ================= CONTAINER ================= */
+
+.container{
+
+max-width:1300px;
+
+margin:auto;
+
+padding:50px 25px;
+
+animation:fadePage .6s ease;
+
 }
 
-.gallery-item {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: var(--shadow);
-    transition: 0.4s ease;
-    background: white;
+@keyframes fadePage{
+
+from{
+opacity:0;
+transform:translateY(10px);
 }
 
-.gallery-item img { 
-    width: 100%; 
-    display: block; 
-    transition: 0.5s;
+to{
+opacity:1;
+transform:translateY(0);
 }
 
-.gallery-item:hover { 
-    transform: translateY(-8px) scale(1.02); 
 }
 
-/* --- Responsividade (Ajustes para Tablet e Celular) --- */
+/* ================= SLIDER ================= */
 
-/* Tablets */
-@media (max-width: 900px) {
-    .masonry-gallery { 
-        column-count: 2; 
-    }
-    header {
-        padding: 70px 20px;
-    }
+.slider{
+
+overflow:hidden;
+background:white;
+padding:40px 0;
+
+border-bottom:1px solid #eee;
+
 }
 
-/* Celulares */
-@media (max-width: 600px) {
-    .masonry-gallery { 
-        column-count: 1; 
-    }
-    .nav-links {
-        gap: 10px;
-        font-size: 0.9rem;
-    }
-    .bncc-card {
-        padding: 20px;
-    }
-}
-/* Estilos Extras para Conteúdos */
-.search-container {
-    margin: -30px auto 40px;
-    max-width: 600px;
-    position: relative;
-    z-index: 20;
+.slider-track{
+
+display:flex;
+gap:20px;
+
+animation:scroll 60s linear infinite;
+
 }
 
-.search-container input {
-    width: 100%;
-    padding: 15px 25px;
-    border-radius: 30px;
-    border: none;
-    box-shadow: var(--shadow);
-    font-size: 1rem;
-    outline: none;
+.slider-track img{
+
+width:280px;
+height:180px;
+
+object-fit:cover;
+
+border-radius:12px;
+
+box-shadow:var(--shadow);
+
+flex-shrink:0;
+
 }
 
-.video-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
+@keyframes scroll{
+
+0%{transform:translateX(0)}
+100%{transform:translateX(-50%)}
+
 }
 
-.video-card {
-    background: var(--white);
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: var(--shadow);
-    transition: 0.3s;
+
+/* ================= BNCC ================= */
+
+.bncc-card{
+
+background:white;
+
+border-radius:20px;
+
+padding:40px;
+
+margin-top:-60px;
+
+box-shadow:var(--shadow);
+
 }
 
-.video-card:hover { transform: translateY(-5px); }
+.bncc-grid{
 
-.video-card iframe { width: 100%; height: 200px; border: none; }
+display:grid;
 
-.video-info { padding: 15px; }
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 
-.video-info h4 { color: var(--primary); margin-bottom: 5px; }
+gap:30px;
 
-.podcast-card {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    background: var(--white);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: var(--shadow);
+margin-top:30px;
+
 }
 
-@media (max-width: 600px) {
-    .podcast-card { flex-direction: column; text-align: center; }
+.bncc-item{
+
+padding:20px;
+
+border-left:4px solid var(--primary);
+
+background:#eef4ff;
+
+border-radius:0 15px 15px 0;
+
 }
 
-.data-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    background: white;
+
+/* ================= GALERIA ================= */
+
+.masonry-gallery{
+
+column-count:3;
+column-gap:20px;
+
+padding:20px 0;
+
 }
 
-.data-table th { background: var(--primary); color: white; padding: 12px; }
-.data-table td { padding: 12px; border-bottom: 1px solid #eee; }
+.gallery-item{
 
-/* Estilos para a Tabela e Listas Acadêmicas */
-.data-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    background: white;
-    font-size: 0.9rem;
-}
-.data-table th { background: var(--primary); color: white; padding: 12px; text-align: left; }
-.data-table td { padding: 10px; border-bottom: 1px solid #eee; }
+break-inside:avoid;
 
-.history-section {
-    background: #fff;
-    padding: 30px;
-    border-radius: 15px;
-    margin-bottom: 30px;
-    box-shadow: var(--shadow);
+margin-bottom:20px;
+
+border-radius:15px;
+
+overflow:hidden;
+
+box-shadow:var(--shadow);
+
+transition:.4s;
+
 }
 
-.download-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    margin-top: 20px;
+.gallery-item img{
+
+width:100%;
+display:block;
+transition:.4s;
+
 }
 
-.btn-download {
-    display: block;
-    text-align: center;
-    padding: 10px;
-    background: var(--light);
-    color: var(--primary);
-    text-decoration: none;
-    border: 2px solid var(--primary);
-    border-radius: 8px;
-    font-weight: 600;
-    transition: 0.3s;
+.gallery-item:hover{
+
+transform:translateY(-8px) scale(1.02);
+
 }
-.btn-download:hover { background: var(--primary); color: white; }
+
+.gallery-item:hover img{
+
+transform:scale(1.05);
+
+}
+
+
+/* ================= VIDEO ================= */
+
+.video-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+
+margin-top:25px;
+
+}
+
+.video-card{
+
+background:white;
+
+border-radius:15px;
+
+overflow:hidden;
+
+box-shadow:var(--shadow);
+
+}
+
+.video-card iframe{
+
+width:100%;
+aspect-ratio:16/9;
+
+border:none;
+
+}
+
+.video-info{
+
+padding:15px;
+
+}
+
+.video-info h4{
+
+color:var(--primary);
+
+}
+
+.destaque-video{
+
+max-width:800px;
+margin:auto;
+
+}
+
+
+/* ================= TABELA ================= */
+/* ================= TABELA PADRÃO ================= */
+
+.data-table{
+
+width:100%;
+
+border-collapse:collapse;
+
+margin-top:20px;
+
+background:white;
+
+border-radius:10px;
+
+overflow:hidden;
+
+}
+
+.data-table th{
+
+background:var(--primary);
+
+color:white;
+
+padding:12px;
+
+text-align:left;
+
+}
+
+.data-table td{
+
+padding:12px;
+
+border-bottom:1px solid #eee;
+
+}
+
+.data-table tbody tr:hover{
+
+background:#f1f5ff;
+
+}
+
+
+/* ================= TABELA DESKTOP ================= */
+
+.table-desktop{
+display:block;
+}
+
+
+/* ================= TABELA MOBILE ================= */
+
+.table-mobile{
+display:none;
+}
+
+
+/* ================= ESTILO MOBILE (mesmo visual da tabela) ================= */
+
+.mobile-row{
+
+background:white;
+
+border-bottom:1px solid #eee;
+
+padding:12px;
+
+}
+
+.mobile-row:last-child{
+border-bottom:none;
+}
+
+.mobile-row strong{
+
+display:block;
+
+background:var(--primary);
+
+color:white;
+
+padding:8px;
+
+border-radius:6px;
+
+margin-bottom:8px;
+
+}
+
+
+/* ================= RESPONSIVO ================= */
+
+@media(max-width:700px){
+
+.table-desktop{
+display:none;
+}
+
+.table-mobile{
+display:block;
+}
+
+.mobile-row{
+
+border-radius:10px;
+
+margin-bottom:12px;
+
+box-shadow:0 3px 8px rgba(0,0,0,0.08);
+
+}
+
+}
+/* ================= DOWNLOAD ================= */
+
+.download-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+
+gap:15px;
+
+margin-top:20px;
+
+}
+
+.btn-download{
+
+display:block;
+
+text-align:center;
+
+padding:10px;
+
+background:var(--light);
+
+color:var(--primary);
+
+text-decoration:none;
+
+border:2px solid var(--primary);
+
+border-radius:8px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.btn-download:hover{
+
+background:var(--primary);
+color:white;
+
+}
+
+
+/* ================= SPOTIFY STYLE PODCAST ================= */
+
+.spotify-player{
+
+display:flex;
+
+align-items:center;
+
+gap:25px;
+
+background:#111827;
+
+color:white;
+
+padding:25px;
+
+border-radius:18px;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.25);
+
+max-width:750px;
+
+margin:auto;
+
+transition:transform .3s ease;
+
+}
+
+.spotify-player:hover{
+
+transform:translateY(-5px);
+
+}
+
+/* CAPA */
+
+.podcast-cover{
+
+width:120px;
+
+height:120px;
+
+border-radius:12px;
+
+object-fit:cover;
+
+box-shadow:0 6px 15px rgba(0,0,0,0.3);
+
+}
+
+/* TEXTO */
+
+.spotify-info h4{
+
+margin-bottom:6px;
+
+font-size:18px;
+
+color:#22c55e;
+
+}
+
+.spotify-info p{
+
+font-size:14px;
+
+opacity:.85;
+
+margin-bottom:10px;
+
+}
+
+/* PLAYER */
+
+.spotify-audio{
+
+width:100%;
+
+filter:invert(1);
+
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+.spotify-player{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.podcast-cover{
+
+width:100px;
+height:100px;
+
+}
+
+}
+/* ================= DOWNLOAD CARDS ================= */
+
+.download-card{
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+padding:18px;
+
+background:white;
+
+border-radius:12px;
+
+box-shadow:var(--shadow);
+
+text-decoration:none;
+
+color:var(--dark);
+
+font-weight:600;
+
+transition:transform .25s ease, box-shadow .25s ease, background .25s ease;
+
+}
+
+/* animação */
+
+.download-card:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 15px 30px rgba(0,0,0,0.12);
+
+background:var(--primary);
+
+color:white;
+
+}
+/* ================= SEARCH ================= */
+
+.search-container{
+
+margin-bottom:40px;
+text-align:center;
+
+}
+
+#searchInput{
+
+width:100%;
+max-width:600px;
+
+padding:15px;
+
+border-radius:25px;
+
+border:1px solid #ddd;
+
+font-family:'Poppins',sans-serif;
+
+outline:none;
+
+box-shadow:0 4px 6px rgba(0,0,0,0.1);
+
+}
+
+
+/* ================= HISTORIA ================= */
+
+.history-section{
+
+background:white;
+
+padding:35px;
+
+border-radius:20px;
+
+box-shadow:var(--shadow);
+
+margin-bottom:50px;
+
+transition:transform .3s, box-shadow .3s;
+
+}
+
+.history-section:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 15px 35px rgba(0,0,0,0.1);
+
+}
+
+.history-section h2{
+
+color:var(--primary);
+
+margin-bottom:15px;
+
+}
+
+.history-section p{
+
+margin-bottom:15px;
+
+}
+
+
+/* ================= FOOTER ================= */
+
+footer{
+
+text-align:center;
+
+padding:30px;
+
+background:#0f172a;
+
+color:white;
+
+margin-top:40px;
+
+}
+
+
+/* ================= RESPONSIVO ================= */
+
+@media(max-width:900px){
+
+.masonry-gallery{
+column-count:2;
+}
+
+header{
+padding:70px 20px;
+}
+
+.slider-track img{
+width:220px;
+height:140px;
+}
+
+}
+
+@media(max-width:768px){
+
+nav{
+
+flex-direction:column;
+align-items:flex-start;
+
+}
+
+.nav-links{
+
+flex-direction:column;
+width:100%;
+
+margin-top:10px;
+
+gap:10px;
+
+}
+
+.nav-links li{
+
+width:100%;
+
+}
+
+.nav-links a{
+
+display:block;
+
+padding:8px 0;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.masonry-gallery{
+column-count:1;
+}
+
+.bncc-card{
+padding:20px;
+}
+
+header h1{
+font-size:1.6rem;
+}
+
+.video-card iframe{
+aspect-ratio:16/9;
+}
+
+}
+
+/* VIDEO DESTAQUE */
+
+.video-destaque{
+
+margin-bottom:50px;
+
+}
+
+.video-card{
+
+background:white;
+
+border-radius:18px;
+
+overflow:hidden;
+
+box-shadow:var(--shadow);
+
+transition:transform .3s, box-shadow .3s;
+
+}
+
+.video-card:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 15px 40px rgba(0,0,0,0.12);
+
+}
+
+.video-info{
+
+padding:18px;
+
+}
+
+.video-info h4{
+
+color:var(--primary);
+margin-bottom:6px;
+
+}
+
+/* ================= CARD DE APRESENTAÇÃO ================= */
+
+.slide-card{
+
+background:white;
+
+border-radius:16px;
+
+overflow:hidden;
+
+box-shadow:0 4px 14px rgba(0,0,0,0.08);
+
+transition:transform .25s ease, box-shadow .25s ease;
+
+max-width:900px;
+
+margin:30px auto;
+
+}
+
+/* efeito hover leve */
+
+.slide-card:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 8px 22px rgba(0,0,0,0.12);
+
+}
+
+/* container do slideshare */
+
+.slide-container{
+
+width:100%;
+
+position:relative;
+
+padding-top:56.25%; /* 16:9 */
+
+background:#f4f6fb;
+
+}
+
+/* iframe */
+
+.slide-container iframe{
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+border:none;
+
+}
+
+/* texto */
+
+.slide-title{
+
+font-weight:600;
+
+color:var(--primary);
+
+margin-bottom:6px;
+
+}
+
+.slide-desc{
+
+color:#555;
+
+font-size:14px;
+
+}
