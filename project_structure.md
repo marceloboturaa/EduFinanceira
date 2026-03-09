@@ -1,13 +1,13 @@
-# 📁 EducacaoFinaneira - Project Structure
+# 📁 EduFinanceira - Project Structure
 
-*Generated on: 07/03/2026, 17:58:17*
+*Generated on: 09/03/2026, 17:25:17*
 
 ## 📋 Quick Overview
 
 | Metric | Value |
 |--------|-------|
-| 📄 Total Files | 69 |
-| 📁 Total Folders | 4 |
+| 📄 Total Files | 76 |
+| 📁 Total Folders | 5 |
 | 🌳 Max Depth | 1 levels |
 | 🛠️ Tech Stack | CSS |
 
@@ -19,37 +19,42 @@
 
 ### By File Type
 
-- 🖼️ **.jpg** (JPEG images): 59 files (85.5%)
-- 🌐 **.html** (HTML files): 4 files (5.8%)
-- 📄 **.** (Other files): 2 files (2.9%)
-- 🎨 **.css** (Stylesheets): 1 files (1.4%)
-- 📄 **.zip** (Other files): 1 files (1.4%)
-- 📜 **.js** (JavaScript files): 1 files (1.4%)
-- 📖 **.md** (Markdown files): 1 files (1.4%)
+- 🖼️ **.jpg** (JPEG images): 60 files (78.9%)
+- 🌐 **.html** (HTML files): 4 files (5.3%)
+- 📕 **.pdf** (PDF files): 4 files (5.3%)
+- 🎨 **.css** (Stylesheets): 2 files (2.6%)
+- 📜 **.js** (JavaScript files): 2 files (2.6%)
+- 📖 **.md** (Markdown files): 2 files (2.6%)
+- 📄 **.mp3** (Other files): 1 files (1.3%)
+- 📄 **.** (Other files): 1 files (1.3%)
 
 ### By Category
 
-- **Assets**: 59 files (85.5%)
-- **Web**: 4 files (5.8%)
-- **Other**: 3 files (4.3%)
-- **Styles**: 1 files (1.4%)
-- **JavaScript**: 1 files (1.4%)
-- **Docs**: 1 files (1.4%)
+- **Assets**: 60 files (78.9%)
+- **Docs**: 6 files (7.9%)
+- **Web**: 4 files (5.3%)
+- **Other**: 2 files (2.6%)
+- **Styles**: 2 files (2.6%)
+- **JavaScript**: 2 files (2.6%)
 
 ### 📁 Largest Directories
 
-- **root**: 69 files
+- **root**: 76 files
 - **imagens**: 60 files
-- **css**: 1 files
-- **js**: 1 files
-- **pdf**: 0 files
+- **pdf**: 4 files
+- **css**: 2 files
+- **js**: 2 files
 
 ## 🌳 Directory Structure
 
 ```
-EducacaoFinaneira/
-├── 📄 .gitattributes
+EduFinanceira/
+├── 🌐 apresentacao.html
+├── 📂 Audio/
+│   └── 📄 DESTAQUE-CUSP-04-20-MARÇO-HISTÓRIADASMOEDAS_10min.mp3
+├── 🌐 conteudos.html
 ├── 🎨 css/
+│   ├── 🎨 apresentacao.css
 │   └── 🎨 style.css
 ├── 🌐 galeria.html
 ├── 📂 imagens/
@@ -112,25 +117,30 @@ EducacaoFinaneira/
 │   ├── 🖼️ MVIMG_20260307_163837.jpg
 │   ├── 🖼️ MVIMG_20260307_164254.jpg
 │   ├── 🖼️ MVIMG_20260307_164654.jpg
-│   └── 📄 Photos-3-001.zip
+│   └── 🖼️ subcanal_ciencia_usp-150x150.jpg
 ├── 🌐 index.html
 ├── 📂 js/
+│   ├── 📜 apresentacao.js
 │   └── 📜 script.js
 ├── 📄 LICENSE
-├── 🌐 materiais.html
 ├── 📂 pdf/
-├── 🔴 📖 **README.md**
-└── 🌐 timeline.html
+│   ├── 📕 conhecimento-financeiro.pdf
+│   ├── 📕 defincoes-e-metas.pdf
+│   ├── 📕 história-do-dinheiro-externo.pdf
+│   └── 📕 trabalho-ed-financeira.pdf
+├── 📖 project_structure.md
+└── 🔴 📖 **README.md**
 ```
 
 ## 📖 Legend
 
 ### File Types
+- 🌐 Web: HTML files
 - 📄 Other: Other files
 - 🎨 Styles: Stylesheets
-- 🌐 Web: HTML files
 - 🖼️ Assets: JPEG images
 - 📜 JavaScript: JavaScript files
+- 📕 Docs: PDF files
 - 📖 Docs: Markdown files
 
 ### Importance Levels

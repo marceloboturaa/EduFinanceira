@@ -4,6 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
+/* ================= VARIÁVEIS ================= */
+
 :root{
 
 --primary:#2563eb;
@@ -17,10 +19,16 @@
 
 }
 
+/* ================= RESET ================= */
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
@@ -29,9 +37,15 @@ font-family:'Poppins',sans-serif;
 background:var(--light);
 color:var(--dark);
 line-height:1.6;
+-webkit-font-smoothing:antialiased;
 
 }
 
+img{
+max-width:100%;
+height:auto;
+display:block;
+}
 
 /* ================= NAVBAR ================= */
 
@@ -124,8 +138,8 @@ color:var(--primary);
 
 }
 
+/* MENU MOBILE */
 
-/* MENU Retratio */
 .menu-toggle{
 
 display:none;
@@ -158,6 +172,7 @@ display:flex;
 }
 
 }
+
 /* ================= HEADER ================= */
 
 header{
@@ -186,7 +201,6 @@ header p{
 opacity:0.9;
 
 }
-
 
 /* ================= CONTAINER ================= */
 
@@ -234,6 +248,7 @@ display:flex;
 gap:20px;
 
 animation:scroll 60s linear infinite;
+will-change:transform;
 
 }
 
@@ -258,7 +273,6 @@ flex-shrink:0;
 100%{transform:translateX(-50%)}
 
 }
-
 
 /* ================= BNCC ================= */
 
@@ -300,7 +314,6 @@ border-radius:0 15px 15px 0;
 
 }
 
-
 /* ================= GALERIA ================= */
 
 .masonry-gallery{
@@ -331,7 +344,6 @@ transition:.4s;
 .gallery-item img{
 
 width:100%;
-display:block;
 transition:.4s;
 
 }
@@ -347,7 +359,6 @@ transform:translateY(-8px) scale(1.02);
 transform:scale(1.05);
 
 }
-
 
 /* ================= VIDEO ================= */
 
@@ -367,11 +378,21 @@ margin-top:25px;
 
 background:white;
 
-border-radius:15px;
+border-radius:18px;
 
 overflow:hidden;
 
 box-shadow:var(--shadow);
+
+transition:transform .3s, box-shadow .3s;
+
+}
+
+.video-card:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 15px 40px rgba(0,0,0,0.12);
 
 }
 
@@ -386,13 +407,14 @@ border:none;
 
 .video-info{
 
-padding:15px;
+padding:18px;
 
 }
 
 .video-info h4{
 
 color:var(--primary);
+margin-bottom:6px;
 
 }
 
@@ -403,9 +425,7 @@ margin:auto;
 
 }
 
-
 /* ================= TABELA ================= */
-/* ================= TABELA PADRÃO ================= */
 
 .data-table{
 
@@ -449,22 +469,17 @@ background:#f1f5ff;
 
 }
 
-
-/* ================= TABELA DESKTOP ================= */
+/* ================= TABELA RESPONSIVA ================= */
 
 .table-desktop{
 display:block;
 }
 
-
-/* ================= TABELA MOBILE ================= */
-
 .table-mobile{
 display:none;
 }
 
-
-/* ================= ESTILO MOBILE (mesmo visual da tabela) ================= */
+/* MOBILE */
 
 .mobile-row{
 
@@ -496,9 +511,6 @@ margin-bottom:8px;
 
 }
 
-
-/* ================= RESPONSIVO ================= */
-
 @media(max-width:700px){
 
 .table-desktop{
@@ -520,6 +532,7 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
 }
 
 }
+
 /* ================= DOWNLOAD ================= */
 
 .download-grid{
@@ -565,8 +578,7 @@ color:white;
 
 }
 
-
-/* ================= SPOTIFY STYLE PODCAST ================= */
+/* ================= PODCAST ================= */
 
 .spotify-player{
 
@@ -600,8 +612,6 @@ transform:translateY(-5px);
 
 }
 
-/* CAPA */
-
 .podcast-cover{
 
 width:120px;
@@ -615,8 +625,6 @@ object-fit:cover;
 box-shadow:0 6px 15px rgba(0,0,0,0.3);
 
 }
-
-/* TEXTO */
 
 .spotify-info h4{
 
@@ -638,17 +646,12 @@ margin-bottom:10px;
 
 }
 
-/* PLAYER */
-
 .spotify-audio{
 
 width:100%;
-
 filter:invert(1);
 
 }
-
-/* MOBILE */
 
 @media(max-width:600px){
 
@@ -668,7 +671,8 @@ height:100px;
 }
 
 }
-/* ================= DOWNLOAD CARDS ================= */
+
+/* ================= DOWNLOAD CARD ================= */
 
 .download-card{
 
@@ -696,8 +700,6 @@ transition:transform .25s ease, box-shadow .25s ease, background .25s ease;
 
 }
 
-/* animação */
-
 .download-card:hover{
 
 transform:translateY(-6px);
@@ -709,6 +711,7 @@ background:var(--primary);
 color:white;
 
 }
+
 /* ================= SEARCH ================= */
 
 .search-container{
@@ -735,10 +738,11 @@ outline:none;
 
 box-shadow:0 4px 6px rgba(0,0,0,0.1);
 
+box-sizing:border-box;
+
 }
 
-
-/* ================= HISTORIA ================= */
+/* ================= HISTÓRIA ================= */
 
 .history-section{
 
@@ -778,24 +782,112 @@ margin-bottom:15px;
 
 }
 
-
 /* ================= FOOTER ================= */
+/* ================= FOOTER MODERNO ================= */
 
-footer{
-
-text-align:center;
-
-padding:30px;
+.footer{
 
 background:#0f172a;
 
 color:white;
 
-margin-top:40px;
+margin-top:80px;
 
 }
 
+.footer-wrapper{
 
+max-width:1200px;
+
+margin:auto;
+
+padding:60px 20px;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:40px;
+
+}
+
+.footer-brand h2{
+
+color:white;
+
+margin-bottom:10px;
+
+}
+
+.footer-brand p{
+
+font-size:14px;
+
+opacity:.8;
+
+line-height:1.6;
+
+}
+
+.footer-links h4{
+
+margin-bottom:12px;
+
+}
+
+.footer-links a{
+
+display:block;
+
+text-decoration:none;
+
+color:#cbd5e1;
+
+margin-bottom:8px;
+
+font-size:14px;
+
+transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+color:white;
+
+transform:translateX(4px);
+
+}
+
+.footer-school h4{
+
+margin-bottom:10px;
+
+}
+
+.footer-school p{
+
+font-size:14px;
+
+opacity:.8;
+
+line-height:1.6;
+
+}
+
+.footer-bottom{
+
+border-top:1px solid rgba(255,255,255,0.1);
+
+text-align:center;
+
+padding:20px;
+
+font-size:14px;
+
+opacity:.7;
+
+}
 /* ================= RESPONSIVO ================= */
 
 @media(max-width:900px){
@@ -864,132 +956,5 @@ padding:20px;
 header h1{
 font-size:1.6rem;
 }
-
-.video-card iframe{
-aspect-ratio:16/9;
-}
-
-}
-
-/* VIDEO DESTAQUE */
-
-.video-destaque{
-
-margin-bottom:50px;
-
-}
-
-.video-card{
-
-background:white;
-
-border-radius:18px;
-
-overflow:hidden;
-
-box-shadow:var(--shadow);
-
-transition:transform .3s, box-shadow .3s;
-
-}
-
-.video-card:hover{
-
-transform:translateY(-6px);
-
-box-shadow:0 15px 40px rgba(0,0,0,0.12);
-
-}
-
-.video-info{
-
-padding:18px;
-
-}
-
-.video-info h4{
-
-color:var(--primary);
-margin-bottom:6px;
-
-}
-
-/* ================= CARD DE APRESENTAÇÃO ================= */
-
-.slide-card{
-
-background:white;
-
-border-radius:16px;
-
-overflow:hidden;
-
-box-shadow:0 4px 14px rgba(0,0,0,0.08);
-
-transition:transform .25s ease, box-shadow .25s ease;
-
-max-width:900px;
-
-margin:30px auto;
-
-}
-
-/* efeito hover leve */
-
-.slide-card:hover{
-
-transform:translateY(-4px);
-
-box-shadow:0 8px 22px rgba(0,0,0,0.12);
-
-}
-
-/* container do slideshare */
-
-.slide-container{
-
-width:100%;
-
-position:relative;
-
-padding-top:56.25%; /* 16:9 */
-
-background:#f4f6fb;
-
-}
-
-/* iframe */
-
-.slide-container iframe{
-
-position:absolute;
-
-top:0;
-left:0;
-
-width:100%;
-height:100%;
-
-border:none;
-
-}
-
-/* texto */
-
-.slide-title{
-
-font-weight:600;
-
-color:var(--primary);
-
-margin-bottom:6px;
-
-}
-
-.slide-desc{
-
-color:#555;
-
-font-size:14px;
 
 }

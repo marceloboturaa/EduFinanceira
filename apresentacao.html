@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Apresentações | Educação Financeira</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/apresentacao.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<!-- NAVBAR -->
+<nav>
+
+<div class="logo">EduFinanceira</div>
+
+<div class="menu-toggle">☰</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Início</a></li>
+<li><a href="galeria.html">Galeria</a></li>
+<li><a href="apresentacao.html">Apresentações</a></li>
+<li><a href="conteudos.html">Conteúdos</a></li>
+
+</ul>
+
+</nav>
+
+
+
+<header>
+
+<h1>Apresentações dos Trabalhos</h1>
+
+<p>Visualize os slides apresentados pelos estudantes.</p>
+
+</header>
+
+
+
+<div class="container">
+
+
+<!-- GALERIA DE APRESENTAÇÕES -->
+
+<section class="galeria">
+
+<div class="card" onclick="abrirPDF('pdf/conhecimento-financeiro.pdf')">
+
+<canvas class="thumb" data-pdf="pdf/conhecimento-financeiro.pdf"></canvas>
+<h3>Conhecimento Financeiro</h3>
+</div>
+
+
+<div class="card" onclick="abrirPDF('pdf/defincoes-e-metas.pdf')">
+
+<canvas class="thumb" data-pdf="pdf/defincoes-e-metas.pdf"></canvas>
+<h3>Definições e Metas</h3>
+</div>
+
+
+
+
+<div class="card" onclick="abrirPDF('pdf/trabalho-ed-financeira.pdf')">
+
+<canvas class="thumb" data-pdf="pdf/trabalho-ed-financeira.pdf"></canvas>
+<h3>Trabalho Educação Financeira</h3>
+
+</div>
+
+
+<div class="card" onclick="abrirPDF('pdf/história-do-dinheiro-externo.pdf')">
+
+<canvas class="thumb" data-pdf="pdf/história-do-dinheiro-externo.pdf"></canvas>
+<h3>História do Dinheiro Externo</h3>
+</div>
+
+
+</section>
+
+</div>
+
+<!-- VISUALIZADOR DE SLIDES -->
+
+<div id="visualizador">
+
+<canvas id="pdf-render"></canvas>
+
+
+<div class="controles">
+
+<button id="prev">❮</button>
+<button id="next">❯</button>
+
+</div>
+
+
+
+<!-- FIM DA APRESENTAÇÃO -->
+
+<div id="fim-apresentacao">
+
+<div class="fim-box">
+
+<h2>Fim da apresentação</h2>
+
+<p>Você chegou ao último slide.</p>
+
+<div class="fim-botoes">
+
+<button onclick="reiniciarSlides()">🔁 Recomeçar</button>
+
+<button onclick="voltarGaleria()">📚 Voltar</button>
+
+<button onclick="fechar()">❌ Fechar</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<footer class="footer">
+
+<div class="footer-wrapper">
+
+<div class="footer-brand">
+
+<h2>Educação Financeira</h2>
+
+<p>
+Exposição de trabalhos desenvolvidos pelos estudantes sobre
+educação financeira, planejamento e história da moeda.
+</p>
+
+</div>
+
+
+<div class="footer-links">
+
+<h4>Explorar</h4>
+
+<a href="index.html">Início</a>
+<a href="galeria.html">Galeria</a>
+<a href="videos.html">Vídeos</a>
+<a href="downloads.html">Materiais</a>
+
+</div>
+
+
+<div class="footer-links">
+
+<h4>Projeto</h4>
+
+<a>Educação Financeira</a>
+<a>Trabalhos Escolares</a>
+<a>Pesquisa Histórica</a>
+
+</div>
+
+
+<div class="footer-school">
+
+<h4>Instituição</h4>
+
+<p>
+Colégio Estadual Cívico-Militar<br>
+Tancredo de Almeida Neves
+</p>
+
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+<p>
+© 2026 Projeto Educação Financeira • Desenvolvido para fins educacionais
+</p>
+
+</div>
+
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.min.js"></script>
+
+<script src="js/apresentacao.js"></script>
+
+<script>
+
+const toggle=document.querySelector(".menu-toggle");
+const menu=document.querySelector(".nav-links");
+
+toggle.onclick=()=>{
+
+menu.classList.toggle("active");
+
+}
+
+</script>
+
+</body>
+</html>
