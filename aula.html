@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduFinanceira - História e Origem da Moeda</title>
+    <link rel="stylesheet" href="css/aula.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">EduFinanceira</div>
+        <div class="menu-toggle">☰</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="apresentacao.html">Apresentações</a></li>
+            <li><a href="conteudos.html">Conteúdos</a></li>
+        </ul>
+    </nav>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Biblioteca de Educação Financeira</h1>
+        <p>História, Dados Técnicos e Materiais de Apoio</p>
+    </header>
+
+    <!-- CONTAINER PRINCIPAL -->
+    <main class="container">
+
+        <!-- BUSCA -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Busque por: Império, Inflação, Real, PDF, Vídeo..." onkeyup="filterContent()">
+        </div>
+
+        <!-- PODCAST PLAYER -->
+        <section class="filterable-item podcast-section">
+            <div class="spotify-player">
+                <img src="imagens/subcanal_ciencia_usp-150x150.jpg" alt="Podcast Ciência USP" class="podcast-cover">
+                <div class="spotify-info">
+                    <h4>História das Moedas - Quando surgiram?</h4>
+                    <p>Uma viagem histórica sobre a trajetória do dinheiro.</p>
+                    <audio controls class="spotify-audio">
+                        <source src="Audio/DESTAQUE-CUSP-04-20-MARÇO-HISTÓRIADASMOEDAS_10min.mp3" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </div>
+            </div>
+        </section>
+
+        <!-- VÍDEO DESTAQUE -->
+        <section class="video-destaque filterable-item">
+            <div class="video-card destaque-video">
+                <iframe src="https://www.youtube.com/embed/-7Az6V2oAD4" title="Banco Central do Brasil" frameborder="0" allowfullscreen loading="lazy"></iframe>
+                <div class="video-info">
+                    <h4>Banco Central do Brasil</h4>
+                    <p>Conheça os padrões monetários do Brasil desde 1822 e descubra qual moeda circulou por mais tempo.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== HISTÓRIA DO DINHEIRO NO BRASIL ========== -->
+        <section id="historia-brasil" class="history-section">
+            <h2>História do Dinheiro no Brasil</h2>
+            <p>A história da moeda no Brasil é marcada por transformações econômicas, políticas e sociais. Conheça as principais fases:</p>
+
+            <!-- Timeline cards -->
+            <div class="timeline-cards">
+                <div class="timeline-card">
+                    <h3>1500–1694: Escambo e Mercadorias</h3>
+                    <p>Antes da colonização, indígenas praticavam escambo. Com a chegada dos portugueses, o açúcar e o pau-brasil tornaram-se "moedas" informais.</p>
+                </div>
+                <div class="timeline-card">
+                    <h3>1695–1822: Moedas Coloniais</h3>
+                    <p>Criação da Casa da Moeda na Bahia (1694) e circulação de moedas de ouro e prata. O "réis" era a unidade de conta.</p>
+                </div>
+                <div class="timeline-card">
+                    <h3>1822–1942: Império e Primeira República</h3>
+                    <p>Após a Independência, o Brasil mantém o réis. Surgem os primeiros bancos e o papel-moeda se populariza.</p>
+                </div>
+                <div class="timeline-card">
+                    <h3>1942–1967: Cruzeiro (1ª fase)</h3>
+                    <p>O Cruzeiro substitui o réis (1 cruzeiro = 1000 réis). Período de industrialização e inflação crescente.</p>
+                </div>
+                <div class="timeline-card">
+                    <h3>1967–1986: Cruzeiro Novo e Volta do Cruzeiro</h3>
+                    <p>Para conter a inflação, o governo corta zeros: Cruzeiro Novo (1967) e depois novamente Cruzeiro (1970).</p>
+                </div>
+                <div class="timeline-card">
+                    <h3>1986–1994: Cruzado, Cruzado Novo, Cruzeiro Real</h3>
+                    <p>Planos econômicos fracassados: Cruzado (1986), Cruzado Novo (1989), Cruzeiro (1990) e Cruzeiro Real (1993).</p>
+                </div>
+                <div class="timeline-card">
+                    <h3>1994–hoje: O Real</h3>
+                    <p>Plano Real estabiliza a economia, com o real (R$) mantendo-se como moeda forte e estável.</p>
+                </div>
+            </div>
+
+            <!-- Detalhamento das cédulas do Real -->
+            <div style="margin-top: 2rem;">
+                <h3 style="color: var(--primary); margin-bottom: 15px;">1ª Família do Real (1994-2010)</h3>
+                <div class="cedulas-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div class="cedula-card">
+                        <h4>Cédulas</h4>
+                        <p><strong>Valores:</strong> R$ 1, R$ 5, R$ 10, R$ 50, R$ 100</p>
+                        <p><strong>Características:</strong> Impressão em papel algodão, marca d'água com efígie da República, elementos em relevo. A cédula de R$ 10 trazia a imagem do Rei Dom Pedro I; a de R$ 50, uma onça-pintada.</p>
+                    </div>
+                    <div class="cedula-card">
+                        <h4>Moedas</h4>
+                        <p><strong>Valores:</strong> 1, 5, 10, 25, 50 centavos e R$ 1</p>
+                        <p><strong>Características:</strong> Aço inoxidável (1 e 5 centavos), aço revestido de bronze (10, 25, 50 centavos) e bimetal (R$ 1). Anversos com efígie da República e reversos com valores e data.</p>
+                    </div>
+                </div>
+
+                <h3 style="color: var(--primary); margin: 25px 0 15px;">2ª Família do Real (2010-presente)</h3>
+                <div class="cedulas-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div class="cedula-card">
+                        <h4>Cédulas</h4>
+                        <p><strong>Valores:</strong> R$ 2, R$ 5, R$ 10, R$ 20, R$ 50, R$ 100, R$ 200 (a partir de 2020)</p>
+                        <p><strong>Características:</strong> Tamanhos diferenciados para facilitar a identificação por deficientes visuais. Elementos de segurança como faixa holográfica, número que muda de cor e marcas táteis em relevo. As cédulas homenageiam a fauna e flora brasileiras: R$ 2 (tartaruga-de-pente), R$ 5 (garça), R$ 10 (arara), R$ 20 (mico-leão-dourado), R$ 50 (onça-pintada), R$ 100 (garoupa) e R$ 200 (lobo-guará).</p>
+                    </div>
+                    <div class="cedula-card">
+                        <h4>Moedas</h4>
+                        <p><strong>Valores:</strong> 5, 10, 25, 50 centavos e R$ 1 (a moeda de 1 centavo foi descontinuada)</p>
+                        <p><strong>Características:</strong> Novos designs com elementos de segurança mais sofisticados. A moeda de R$ 1 agora possui borda serrilhada e núcleo prateado com anel dourado.</p>
+                    </div>
+                </div>
+                <p><small>Fonte: Banco Central do Brasil</small></p>
+            </div>
+        </section>
+
+        <!-- ========== ORIGEM DA MOEDA: CIVILIZAÇÕES ANTIGAS ========== -->
+        <section id="origem-moeda" class="history-section">
+            <h2>🌍 Origem da Moeda nas Civilizações Antigas</h2>
+            <p>Antes da moeda, predominava o escambo. Com o crescimento do comércio, cada civilização criou seu próprio sistema monetário e métodos de cunhagem. Conheça as principais:</p>
+
+            <div class="civilizacoes-grid">
+                <!-- Grécia Antiga -->
+                <div class="civilizacao-card">
+                    <h4>🏛️ Grécia Antiga</h4>
+                    <p><strong>Moeda:</strong> Dracma (prata, ouro, bronze)</p>
+                    <p><strong>Contexto:</strong> Cidades-estado como Atenas usavam moedas com símbolos locais (ex: coruja de Atenas).</p>
+                    <p><strong>Cunhagem:</strong> Método do martelo: metal derretido em discos (flans), prensados entre cunhos gravados.</p>
+                </div>
+                <!-- Império Romano -->
+                <div class="civilizacao-card">
+                    <h4>🏛️ Império Romano</h4>
+                    <p><strong>Moedas:</strong> Denário (prata), Áureo (ouro), Sestércio (bronze)</p>
+                    <p><strong>Contexto:</strong> Sistema organizado com casas da moeda (“mint”). Moedas com rosto do imperador como propaganda.</p>
+                    <p><strong>Cunhagem:</strong> Similar à grega, mas com maior padronização.</p>
+                </div>
+                <!-- Império Bizantino -->
+                <div class="civilizacao-card">
+                    <h4>🏛️ Império Bizantino</h4>
+                    <p><strong>Moeda:</strong> Solidus (ouro de alta pureza)</p>
+                    <p><strong>Contexto:</strong> Continuidade romana; moeda estável que circulou por quase mil anos.</p>
+                </div>
+                <!-- Pérsia -->
+                <div class="civilizacao-card">
+                    <h4>🏛️ Pérsia (Dario I)</h4>
+                    <p><strong>Moeda:</strong> Dárico (ouro) com imagem do rei com arco e lança.</p>
+                    <p><strong>Contexto:</strong> Facilitava o comércio no enorme império persa.</p>
+                </div>
+                <!-- China Antiga -->
+                <div class="civilizacao-card">
+                    <h4>🏛️ China Antiga</h4>
+                    <p><strong>Moeda:</strong> Bronze com furo quadrado (para amarrar em cordas).</p>
+                    <p><strong>Processo:</strong> Fundição em moldes (diferente do martelo ocidental). Pionera no papel-moeda (séc. VII).</p>
+                </div>
+                <!-- Celtas -->
+                <div class="civilizacao-card">
+                    <h4>🏛️ Celtas</h4>
+                    <p><strong>Materiais:</strong> Ouro, prata, bronze. Desenhos estilizados (cavalos, guerreiros).</p>
+                    <p><strong>Influência:</strong> Copiaram o modelo grego após contato comercial.</p>
+                </div>
+                <!-- Egito -->
+                <div class="civilizacao-card">
+                    <h4>🏛️ Egito Antigo</h4>
+                    <p><strong>Início:</strong> Escambo e metais; moedas surgiram após conquista de Alexandre.</p>
+                    <p><strong>Características:</strong> Imagens de faraós e símbolos religiosos em ouro, prata, bronze.</p>
+                </div>
+                <!-- Império Kushan -->
+                <div class="civilizacao-card">
+                    <h4>🏛️ Império Kushan</h4>
+                    <p><strong>Local:</strong> Ásia Central e norte da Índia (Rota da Seda).</p>
+                    <p><strong>Moedas:</strong> Ouro e cobre com reis e divindades.</p>
+                </div>
+                <!-- Império Otomano -->
+                <div class="civilizacao-card">
+                    <h4>🏛️ Império Otomano</h4>
+                    <p><strong>Moeda:</strong> Akçe (prata) com inscrições em árabe e tughra do sultão.</p>
+                    <p><strong>Cunhagem:</strong> Inicial manual, depois prensas mecânicas.</p>
+                </div>
+            </div>
+
+
+
+            
+            <!-- Fontes de pesquisa -->
+            <div class="fontes">
+                <p>📚 Fontes utilizadas:</p>
+                <ul>
+                    <li>DAVIES, Glyn. <em>A History of Money</em>. University of Wales Press.</li>
+                    <li>FERGUSON, Niall. <em>A Ascensão do Dinheiro</em>. Editora Planeta.</li>
+                    <li>WEATHERFORD, Jack. <em>A História do Dinheiro</em>.</li>
+                    <li>British Museum – <a href="https://www.britishmuseum.org" target="_blank">coleção de moedas antigas</a></li>
+                    <li>American Numismatic Society – <a href="https://numismatics.org" target="_blank">numismatics.org</a></li>
+                    <li>Banco Central do Brasil – <a href="https://www.bcb.gov.br" target="_blank">História do dinheiro</a></li>
+                    <li>Encyclopaedia Britannica – <a href="https://www.britannica.com" target="_blank">History of Coins</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ========== CONCEITOS FUNDAMENTAIS ========== -->
+        <section id="conceitos" class="content-cards-section">
+            <h2>Conceitos Fundamentais de Educação Financeira</h2>
+            <div class="content-cards">
+                
+                <!-- Card Orçamento Pessoal -->
+                <div class="content-card">
+                    <h3>Orçamento Pessoal</h3>
+                    <p>Aprenda a registrar receitas e despesas, equilibrando suas contas e evitando dívidas.</p>
+                    <span class="card-link" onclick="mostrarExplicacao('orcamento')">Leia mais</span>
+                </div>
+
+                <!-- Card Investimentos -->
+                <div class="content-card">
+                    <h3>Investimentos</h3>
+                    <p>Descubra as opções: poupança, CDB, Tesouro Direto, ações e fundos imobiliários.</p>
+                    <span class="card-link" onclick="mostrarExplicacao('investimentos')">Leia mais</span>
+                </div>
+
+                <!-- Card Crédito Consciente -->
+                <div class="content-card">
+                    <h3>Crédito Consciente</h3>
+                    <p>Entenda como usar cartão de crédito, empréstimos e financiamentos sem comprometer seu orçamento.</p>
+                    <span class="card-link" onclick="mostrarExplicacao('credito')">Leia mais</span>
+                </div>
+
+                <!-- Card Reserva de Emergência -->
+                <div class="content-card">
+                    <h3>Reserva de Emergência</h3>
+                    <p>Por que ter uma reserva e como construir a sua para imprevistos.</p>
+                    <span class="card-link" onclick="mostrarExplicacao('reserva')">Leia mais</span>
+                </div>
+            </div>
+
+            <!-- Balão de explicação (único, abaixo dos cards) -->
+            <div id="balaoExplicacao" class="explicacao-container">
+                <div id="explicacaoTitulo" class="explicacao-titulo"></div>
+                <div id="explicacaoConteudo" class="explicacao-conteudo"></div>
+            </div>
+        </section>
+
+        <!-- ========== VÍDEOS E DOCUMENTÁRIOS ========== -->
+        <section class="history-section filterable-item">
+            <h2>🎥 Vídeo Aulas e Documentários</h2>
+            <div class="video-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                <div class="video-card filterable-item">
+                    <iframe src="https://www.youtube.com/embed/6aolLKTHo-I" loading="lazy" allowfullscreen></iframe>
+                    <div class="video-info">
+                        <h4>COMO É FABRICADO O SEU DINHEIRO - Manual do Mundo</h4>
+                        <p>Processo detalhado de fabricação das cédulas.</p>
+                    </div>
+                </div>
+                <div class="video-card filterable-item">
+                    <iframe src="https://www.youtube.com/embed/U1Uqgg3W_qQ" loading="lazy" allowfullscreen></iframe>
+                    <div class="video-info">
+                        <h4>Patrícia Abravanel visita a Casa da Moeda</h4>
+                        <p>Reportagem sobre a produção do dinheiro brasileiro.</p>
+                    </div>
+                </div>
+                <div class="video-card filterable-item">
+                    <iframe src="https://www.youtube.com/embed/dvoJPJv-DOs" loading="lazy" allowfullscreen></iframe>
+                    <div class="video-info">
+                        <h4>Otávio Mesquita visita a Casa da Moeda</h4>
+                        <p>Curiosidades sobre a fabricação das moedas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main> <!-- fim container -->
+
+    <!-- RODAPÉ -->
+    <footer id="rodape">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="brand-title">Projeto Educação Financeira</span>
+                    <p class="brand-desc">Exposição de trabalhos desenvolvidos pelos estudantes sobre educação financeira, apresentando pesquisas, produções e reflexões realizadas em sala de aula.</p>
+                </div>
+                <div class="footer-divider"></div>
+                <div class="footer-bottom">
+                    <span class="footer-copy">© 2026 Marcelo Botura · Desenvolvido para fins educacionais</span>
+                    <a href="https://www.youtube.com/@sabormatematica" target="_blank" class="yt-link" aria-label="YouTube @sabormatematica">
+                        <svg class="yt-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" fill="currentColor"/>
+                            <polygon points="9.75,15.02 15.5,12 9.75,8.98 9.75,15.02" fill="#0a0a0a"/>
+                        </svg>
+                        <span>@sabormatematica</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script para busca e exibição da explicação no balão -->
+    <script>
+        function filterContent() {
+            const input = document.getElementById('searchInput');
+            const filter = input.value.toUpperCase();
+            const items = document.querySelectorAll('.filterable-item');
+            items.forEach(item => {
+                const text = item.textContent || item.innerText;
+                if (text.toUpperCase().indexOf(filter) > -1) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        function mostrarExplicacao(conceito) {
+            const balao = document.getElementById('balaoExplicacao');
+            const titulo = document.getElementById('explicacaoTitulo');
+            const conteudo = document.getElementById('explicacaoConteudo');
+
+            // Dicionário com os textos de cada conceito
+            const textos = {
+                orcamento: {
+                    titulo: '📊 Orçamento Pessoal',
+                    html: `
+                        <p><strong>O que é?</strong> É uma ferramenta de planejamento financeiro que ajuda a controlar para onde vai o seu dinheiro. Consiste em listar todas as fontes de renda (salários, freelas, etc.) e todas as despesas (fixas como aluguel, variáveis como lazer).</p>
+                        <p><strong>Como fazer:</strong> Anote tudo por um mês, categorize os gastos, estabeleça limites e revise periodicamente. O objetivo é que as despesas não ultrapassem a renda, permitindo poupar e investir.</p>
+                    `
+                },
+                investimentos: {
+                    titulo: '📈 Investimentos',
+                    html: `
+                        <p><strong>Tipos de Investimentos:</strong></p>
+                        <ul>
+                            <li><strong>Renda Fixa:</strong> CDB, Tesouro Direto, LCI/LCA – você empresta dinheiro e recebe com juros. Mais seguros.</li>
+                            <li><strong>Renda Variável:</strong> Ações, Fundos Imobiliários – você compra pequenas partes de empresas; maior risco e potencial retorno.</li>
+                        </ul>
+                        <p><strong>Dica:</strong> Comece com reserva de emergência em renda fixa, depois diversifique conforme seu perfil (conservador, moderado, arrojado).</p>
+                    `
+                },
+                credito: {
+                    titulo: '💳 Crédito Consciente',
+                    html: `
+                        <p><strong>Uso Consciente do Crédito:</strong> Crédito é um dinheiro que você usa hoje e paga depois, geralmente com juros. Por isso, deve ser usado com planejamento.</p>
+                        <p><strong>Cartão de crédito:</strong> prefira pagar a fatura integral para evitar juros altos do rotativo.</p>
+                        <p><strong>Empréstimos:</strong> compare taxas de juros (CET) e só peça se for para um objetivo claro e com capacidade de pagamento.</p>
+                        <p><strong>Financiamentos:</strong> avalie o valor total a prazo versus à vista.</p>
+                    `
+                },
+                reserva: {
+                    titulo: '🛡️ Reserva de Emergência',
+                    html: `
+                        <p><strong>O que é?</strong> É um dinheiro guardado para situações inesperadas: perda de emprego, problemas de saúde, reparos urgentes. Ela evita que você precise se endividar.</p>
+                        <p><strong>Quanto guardar?</strong> O recomendado é de 3 a 6 meses do seu custo de vida mensal.</p>
+                        <p><strong>Onde guardar?</strong> Em aplicações de alta liquidez e baixo risco, como poupança, Tesouro Selic ou CDB com liquidez diária.</p>
+                    `
+                }
+            };
+
+            // Preenche o balão com o título e conteúdo correspondente
+            titulo.innerText = textos[conceito].titulo;
+            conteudo.innerHTML = textos[conceito].html;
+
+            // Torna o balão visível
+            balao.classList.add('visivel');
+        }
+    </script>
+</body>
+</html>

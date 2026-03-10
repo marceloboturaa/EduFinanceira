@@ -1,12 +1,12 @@
 # 📁 EduFinanceira - Project Structure
 
-*Generated on: 09/03/2026, 17:25:17*
+*Generated on: 10/03/2026, 17:54:35*
 
 ## 📋 Quick Overview
 
 | Metric | Value |
 |--------|-------|
-| 📄 Total Files | 76 |
+| 📄 Total Files | 80 |
 | 📁 Total Folders | 5 |
 | 🌳 Max Depth | 1 levels |
 | 🛠️ Tech Stack | CSS |
@@ -19,30 +19,30 @@
 
 ### By File Type
 
-- 🖼️ **.jpg** (JPEG images): 60 files (78.9%)
-- 🌐 **.html** (HTML files): 4 files (5.3%)
-- 📕 **.pdf** (PDF files): 4 files (5.3%)
-- 🎨 **.css** (Stylesheets): 2 files (2.6%)
-- 📜 **.js** (JavaScript files): 2 files (2.6%)
-- 📖 **.md** (Markdown files): 2 files (2.6%)
+- 🖼️ **.jpg** (JPEG images): 60 files (75.0%)
+- 📕 **.pdf** (PDF files): 6 files (7.5%)
+- 🌐 **.html** (HTML files): 5 files (6.3%)
+- 🎨 **.css** (Stylesheets): 3 files (3.8%)
+- 📜 **.js** (JavaScript files): 2 files (2.5%)
+- 📖 **.md** (Markdown files): 2 files (2.5%)
 - 📄 **.mp3** (Other files): 1 files (1.3%)
 - 📄 **.** (Other files): 1 files (1.3%)
 
 ### By Category
 
-- **Assets**: 60 files (78.9%)
-- **Docs**: 6 files (7.9%)
-- **Web**: 4 files (5.3%)
-- **Other**: 2 files (2.6%)
-- **Styles**: 2 files (2.6%)
-- **JavaScript**: 2 files (2.6%)
+- **Assets**: 60 files (75.0%)
+- **Docs**: 8 files (10.0%)
+- **Web**: 5 files (6.3%)
+- **Styles**: 3 files (3.8%)
+- **Other**: 2 files (2.5%)
+- **JavaScript**: 2 files (2.5%)
 
 ### 📁 Largest Directories
 
-- **root**: 76 files
+- **root**: 80 files
 - **imagens**: 60 files
-- **pdf**: 4 files
-- **css**: 2 files
+- **pdf**: 6 files
+- **css**: 3 files
 - **js**: 2 files
 
 ## 🌳 Directory Structure
@@ -52,9 +52,11 @@ EduFinanceira/
 ├── 🌐 apresentacao.html
 ├── 📂 Audio/
 │   └── 📄 DESTAQUE-CUSP-04-20-MARÇO-HISTÓRIADASMOEDAS_10min.mp3
+├── 🌐 aula.html
 ├── 🌐 conteudos.html
 ├── 🎨 css/
 │   ├── 🎨 apresentacao.css
+│   ├── 🎨 aula.css
 │   └── 🎨 style.css
 ├── 🌐 galeria.html
 ├── 📂 imagens/
@@ -124,6 +126,8 @@ EduFinanceira/
 │   └── 📜 script.js
 ├── 📄 LICENSE
 ├── 📂 pdf/
+│   ├── 📕 Ata-Codigo-Etica-Estatuto-2024.pdf
+│   ├── 📕 caderno_cidadania_financeira.pdf
 │   ├── 📕 conhecimento-financeiro.pdf
 │   ├── 📕 defincoes-e-metas.pdf
 │   ├── 📕 história-do-dinheiro-externo.pdf
