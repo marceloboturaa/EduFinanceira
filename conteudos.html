@@ -441,20 +441,100 @@
 
         <div class="cards-grid">
 
-          <div class="card">
-            <iframe src="https://www.youtube.com/embed/6aolLKTHo-I" loading="lazy" allowfullscreen></iframe>
-            <h3>Manual do Mundo</h3>
-          </div>
+          <!-- Vídeo 1 -->
 
-          <div class="card">
-            <iframe src="https://www.youtube.com/embed/U1Uqgg3W_qQ" loading="lazy" allowfullscreen></iframe>
-            <h3>Casa da Moeda</h3>
-          </div>
+          <section class="video-destaque filterable-item">
 
-          <div class="card">
-            <iframe src="https://www.youtube.com/embed/dvoJPJv-DOs" loading="lazy" allowfullscreen></iframe>
-            <h3>Visita à Casa da Moeda</h3>
-          </div>
+            <div class="video-card destaque-video">
+
+              <iframe src="https://www.youtube.com/embed/6aolLKTHo-I?si=RPz6EfNL6NFKWDSR"
+                title="Saiba COMO É FABRICADO O SEU DINHEIRO" loading="lazy" allowfullscreen></iframe>
+
+              <div class="video-info">
+
+                <h4>Saiba COMO É FABRICADO O SEU DINHEIRO</h4>
+
+                <p>
+                  Manual do Mundo visitando a Casa da Moeda do Brasil para ver como é feito o dinheiro
+                </p>
+
+              </div>
+
+            </div>
+
+          </section>
+
+
+          <!-- Vídeo 2  -->
+          <section class="video-destaque filterable-item">
+
+            <div class="video-card destaque-video">
+
+              <iframe src="https://www.youtube.com/embed/U1Uqgg3W_qQ?si=paBR7_OaveJs5BhQ"
+                title="Patrícia  visita a Casa da Moeda" loading="lazy" allowfullscreen></iframe>
+
+              <div class="video-info">
+
+                <h4>Patrícia visita a Casa da Moeda</h4>
+
+                <p>
+                  Patrícia Abravanel visita a Casa da Moeda do Rio de Janeiro
+                </p>
+
+              </div>
+
+            </div>
+
+          </section>
+
+          <!-- Vídeo 3 -->
+          <section class="video-destaque filterable-item">
+
+            <div class="video-card destaque-video">
+
+              <iframe src="https://www.youtube.com/embed/dvoJPJv-DOs?si=GfoiOb6eQX9c_FVz"
+                title="Otávio Mesquita visita a Casa da Moeda" loading="lazy" allowfullscreen></iframe>
+
+              <div class="video-info">
+
+                <h4>Otávio Mesquita visita a Casa da Moeda</h4>
+
+                <p>
+                  No Okay Pessoal desta quarta, 08/04/15, Otávio Mesquita visita a Casa da Moeda e mostra como o
+                  dinheiro é fabricado.
+                </p>
+
+              </div>
+
+            </div>
+
+          </section>
+
+
+
+
+          <!-- Vídeo 4 -->
+          <section class="video-destaque filterable-item">
+
+            <div class="video-card destaque-video">
+
+              <iframe src="https://www.youtube.com/embed/-7Az6V2oAD4" title="Banco Central do Brasil" loading="lazy"
+                allowfullscreen></iframe>
+
+              <div class="video-info">
+
+                <h4>Banco Central do Brasil</h4>
+
+                <p>
+                  Conheça os padrões monetários do Brasil desde 1822
+                  e descubra qual moeda circulou por mais tempo.
+                </p>
+
+              </div>
+
+            </div>
+
+          </section>
 
         </div>
 
@@ -468,6 +548,30 @@
   </div>
   <!-- FIM ESCOPAMENTO -->
 
+  <!---->
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+  <script>
+
+    Fancybox.bind("[data-fancybox]", {});
+
+  </script>
+
+  <script>
+
+    const toggle = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".nav-links");
+
+    toggle.onclick = () => {
+
+      menu.classList.toggle("active");
+
+    }
+
+  </script>
 
   <!-- Footer -->
   <footer id="rodape">

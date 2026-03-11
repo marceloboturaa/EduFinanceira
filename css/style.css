@@ -235,7 +235,7 @@ header p {
 /* ================= VÍDEOS ================= */
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   gap: 30px;
   margin-top: 25px;
 }
@@ -257,8 +257,8 @@ header p {
   width: 100%;
   aspect-ratio: 16 / 9;
   border: none;
+  display: block;
 }
-
 .video-info {
   padding: 18px;
 }
@@ -269,8 +269,8 @@ header p {
 }
 
 .destaque-video {
-  max-width: 800px;
-  margin: auto;
+  max-width: 1000px;
+  margin: 40px auto;
 }
 
 /* ================= TABELA ================= */
