@@ -82,7 +82,7 @@
   border-left: 4px solid var(--primary);
   padding: 15px;
   border-radius: 0 10px 10px 0;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .timeline-card h3 {
@@ -102,7 +102,7 @@
   border-radius: 24px;
   padding: 30px;
   margin: 40px 0;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 .podcast-destaque .spotify-player {
@@ -152,7 +152,7 @@
   background: white;
   border-radius: 20px;
   padding: 1.5rem;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
   border: 1px solid #eef2f6;
   transition: all 0.3s ease;
   border-top: 5px solid var(--primary);
@@ -189,7 +189,7 @@
   padding: 2rem;
   margin-top: 3rem;
   border: 1px solid #e2e8f0;
-  box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.02);
 }
 
 .fontes h4 {
@@ -255,6 +255,7 @@
     opacity: 0;
     transform: translateY(10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -333,6 +334,7 @@
     flex-direction: column;
     text-align: center;
   }
+
   .podcast-destaque .podcast-cover {
     width: 100px;
     height: 100px;
@@ -343,11 +345,286 @@
   .timeline-cards {
     grid-template-columns: 1fr;
   }
+
   .accordion-header {
     font-size: 1rem;
     padding: 15px;
   }
+
   .explicacao-titulo {
     font-size: 1.3rem;
   }
+}
+
+.cards-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+  gap: 25px;
+
+  margin-top: 25px;
+
+}
+
+.card {
+
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 16px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+  transition: .3s;
+
+}
+
+.card:hover {
+
+  transform: translateY(-6px);
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+
+}
+
+iframe {
+
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: none;
+
+}
+
+/* ================= PAGINA BIBLIOTECA ================= */
+
+.pagina-biblioteca .cards-grid {
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+
+}
+
+.pagina-biblioteca .card {
+
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: .3s;
+
+}
+
+.pagina-biblioteca .card:hover {
+
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+
+}
+
+.pagina-biblioteca h2 {
+
+  font-size: 1.8rem;
+  margin: 40px 0 20px 0;
+  color: var(--primary);
+
+}
+
+.pagina-biblioteca h3 {
+
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+
+}
+
+.pagina-biblioteca iframe {
+
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: none;
+
+}
+
+.pagina-biblioteca .spotify-player {
+
+  display: flex;
+  gap: 20px;
+  background: #111827;
+  color: white;
+  padding: 25px;
+  border-radius: 18px;
+
+}
+
+.pagina-biblioteca .podcast-cover {
+
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  object-fit: cover;
+
+}
+
+.pagina-biblioteca .search-container {
+
+  text-align: center;
+  margin-bottom: 40px;
+
+}
+
+/*efeito virar cartão)*/
+/* ============================= */
+/* CONCEITOS - CARDS EDUFINANCEIRA */
+/* ============================= */
+
+.content-cards-section {
+  padding: 60px 5%;
+  text-align: center;
+}
+
+.content-cards-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+/* GRID RESPONSIVO */
+
+.content-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+/* CARD */
+
+.flip-card {
+  perspective: 1000px;
+  height: 220px;
+}
+
+/* ANIMAÇÃO */
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+/* FRENTE E VERSO */
+
+.flip-front,
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 14px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+  overflow: hidden;
+}
+
+/* FRENTE */
+
+.flip-front {
+  background: white;
+}
+
+/* VERSO */
+
+.flip-back {
+  color: white;
+  transform: rotateY(180deg);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* CORES DIFERENTES */
+
+.flip-card:nth-child(1) .flip-back {
+  background: #2563eb;
+}
+
+.flip-card:nth-child(2) .flip-back {
+  background: #059669;
+}
+
+.flip-card:nth-child(3) .flip-back {
+  background: #7c3aed;
+}
+
+.flip-card:nth-child(4) .flip-back {
+  background: #ea580c;
+}
+
+.flip-card:nth-child(5) .flip-back {
+  background: #0891b2;
+}
+
+.flip-card:nth-child(6) .flip-back {
+  background: #dc2626;
+}
+
+.flip-card:nth-child(7) .flip-back {
+  background: #16a34a;
+}
+
+.flip-card:nth-child(8) .flip-back {
+  background: #9333ea;
+}
+
+.flip-card:nth-child(9) .flip-back {
+  background: #d97706;
+}
+
+.flip-card:nth-child(10) .flip-back {
+  background: #0ea5e9;
+}
+
+/* TEXTO */
+
+.flip-front h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.flip-back h3 {
+  margin-bottom: 8px;
+}
+
+/* RESPONSIVO */
+
+@media (max-width:768px) {
+
+  .content-cards-section {
+    padding: 40px 20px;
+  }
+
+  .flip-card {
+    height: 200px;
+  }
+
+  .flip-back {
+    font-size: 0.9rem;
+  }
+
 }

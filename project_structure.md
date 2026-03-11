@@ -1,6 +1,6 @@
 # 📁 EduFinanceira - Project Structure
 
-*Generated on: 10/03/2026, 17:54:35*
+*Generated on: 10/03/2026, 21:50:15*
 
 ## 📋 Quick Overview
 

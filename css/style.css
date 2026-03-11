@@ -139,6 +139,7 @@ header p {
     opacity: 0;
     transform: translateY(10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -170,8 +171,13 @@ header p {
 }
 
 @keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 /* ================= BNCC CARD ================= */
@@ -460,6 +466,7 @@ header p {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -471,11 +478,13 @@ header p {
     opacity: 0.6;
     width: 60px;
   }
+
   50% {
     opacity: 1;
     width: 100px;
     background: linear-gradient(90deg, transparent, var(--accent-color), #ff6666, var(--accent-color), transparent);
   }
+
   100% {
     opacity: 0.6;
     width: 60px;
@@ -483,8 +492,15 @@ header p {
 }
 
 @keyframes bounce {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.2); }
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
 }
 
 #rodape {
@@ -587,9 +603,11 @@ header p {
   .masonry-gallery {
     column-count: 2;
   }
+
   header {
     padding: 70px 20px;
   }
+
   .slider-track img {
     width: 220px;
     height: 140px;
@@ -600,6 +618,7 @@ header p {
   .menu-toggle {
     display: block;
   }
+
   .nav-links {
     display: none;
     flex-direction: column;
@@ -607,16 +626,20 @@ header p {
     background: white;
     padding: 10px 0;
   }
+
   .nav-links.active {
     display: flex;
   }
+
   nav {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .nav-links li {
     width: 100%;
   }
+
   .nav-links a {
     display: block;
     padding: 8px 0;
@@ -627,27 +650,34 @@ header p {
   .masonry-gallery {
     column-count: 1;
   }
+
   .bncc-card {
     padding: 20px;
   }
+
   header h1 {
     font-size: 1.6rem;
   }
+
   .table-desktop {
     display: none;
   }
+
   .table-mobile {
     display: block;
   }
+
   .mobile-row {
     border-radius: 10px;
     margin-bottom: 12px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
   }
+
   .spotify-player {
     flex-direction: column;
     text-align: center;
   }
+
   .podcast-cover {
     width: 100px;
     height: 100px;
@@ -659,16 +689,20 @@ header p {
     flex-direction: row;
     justify-content: space-between;
   }
+
   .footer-brand {
     text-align: left;
   }
+
   .brand-desc {
     margin: 0;
   }
+
   .footer-divider {
     margin: 0;
     width: 100px;
   }
+
   .yt-link {
     padding: 0.4rem 1.2rem;
   }
