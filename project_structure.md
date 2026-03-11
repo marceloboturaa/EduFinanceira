@@ -1,12 +1,12 @@
 # 📁 EduFinanceira - Project Structure
 
-*Generated on: 10/03/2026, 21:50:15*
+*Generated on: 11/03/2026, 15:14:20*
 
 ## 📋 Quick Overview
 
 | Metric | Value |
 |--------|-------|
-| 📄 Total Files | 80 |
+| 📄 Total Files | 83 |
 | 📁 Total Folders | 5 |
 | 🌳 Max Depth | 1 levels |
 | 🛠️ Tech Stack | CSS |
@@ -19,28 +19,28 @@
 
 ### By File Type
 
-- 🖼️ **.jpg** (JPEG images): 60 files (75.0%)
-- 📕 **.pdf** (PDF files): 6 files (7.5%)
-- 🌐 **.html** (HTML files): 5 files (6.3%)
-- 🎨 **.css** (Stylesheets): 3 files (3.8%)
-- 📜 **.js** (JavaScript files): 2 files (2.5%)
-- 📖 **.md** (Markdown files): 2 files (2.5%)
-- 📄 **.mp3** (Other files): 1 files (1.3%)
-- 📄 **.** (Other files): 1 files (1.3%)
+- 🖼️ **.jpg** (JPEG images): 62 files (74.7%)
+- 🌐 **.html** (HTML files): 6 files (7.2%)
+- 📕 **.pdf** (PDF files): 6 files (7.2%)
+- 🎨 **.css** (Stylesheets): 3 files (3.6%)
+- 📜 **.js** (JavaScript files): 2 files (2.4%)
+- 📖 **.md** (Markdown files): 2 files (2.4%)
+- 📄 **.mp3** (Other files): 1 files (1.2%)
+- 📄 **.** (Other files): 1 files (1.2%)
 
 ### By Category
 
-- **Assets**: 60 files (75.0%)
-- **Docs**: 8 files (10.0%)
-- **Web**: 5 files (6.3%)
-- **Styles**: 3 files (3.8%)
-- **Other**: 2 files (2.5%)
-- **JavaScript**: 2 files (2.5%)
+- **Assets**: 62 files (74.7%)
+- **Docs**: 8 files (9.6%)
+- **Web**: 6 files (7.2%)
+- **Styles**: 3 files (3.6%)
+- **Other**: 2 files (2.4%)
+- **JavaScript**: 2 files (2.4%)
 
 ### 📁 Largest Directories
 
-- **root**: 80 files
-- **imagens**: 60 files
+- **root**: 83 files
+- **imagens**: 62 files
 - **pdf**: 6 files
 - **css**: 3 files
 - **js**: 2 files
@@ -52,7 +52,8 @@ EduFinanceira/
 ├── 🌐 apresentacao.html
 ├── 📂 Audio/
 │   └── 📄 DESTAQUE-CUSP-04-20-MARÇO-HISTÓRIADASMOEDAS_10min.mp3
-├── 🌐 aula.html
+├── 🌐 aula1.html
+├── 🌐 aula2.html
 ├── 🌐 conteudos.html
 ├── 🎨 css/
 │   ├── 🎨 apresentacao.css
@@ -114,6 +115,8 @@ EduFinanceira/
 │   ├── 🖼️ IMG_20260307_165014.jpg
 │   ├── 🖼️ IMG_20260307_165129.jpg
 │   ├── 🖼️ IMG_20260307_165132.jpg
+│   ├── 🖼️ IMG_20260311_110958.jpg
+│   ├── 🖼️ IMG_20260311_111013.jpg
 │   ├── 🖼️ MVIMG_20260307_153314.jpg
 │   ├── 🖼️ MVIMG_20260307_163706.jpg
 │   ├── 🖼️ MVIMG_20260307_163837.jpg
@@ -126,11 +129,11 @@ EduFinanceira/
 │   └── 📜 script.js
 ├── 📄 LICENSE
 ├── 📂 pdf/
-│   ├── 📕 Ata-Codigo-Etica-Estatuto-2024.pdf
 │   ├── 📕 caderno_cidadania_financeira.pdf
 │   ├── 📕 conhecimento-financeiro.pdf
 │   ├── 📕 defincoes-e-metas.pdf
 │   ├── 📕 história-do-dinheiro-externo.pdf
+│   ├── 📕 preparacao-para-imprevisto.pdf
 │   └── 📕 trabalho-ed-financeira.pdf
 ├── 📖 project_structure.md
 └── 🔴 📖 **README.md**
