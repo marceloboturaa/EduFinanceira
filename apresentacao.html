@@ -3,178 +3,186 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Apresentações | Educação Financeira</title>
+  <title>Apresentações | Educação Financeira</title>
 
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/apresentacao.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/apresentacao.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
 
-<!-- NAVBAR -->
-<nav>
+  <!-- NAVBAR -->
+  <nav>
 
-<div class="logo">EduFinanceira</div>
+    <div class="logo">EduFinanceira</div>
 
-<div class="menu-toggle">☰</div>
+    <div class="menu-toggle">☰</div>
 
-<ul class="nav-links">
+    <ul class="nav-links">
 
-<li><a href="index.html">Início</a></li>
-<li><a href="galeria.html">Galeria</a></li>
-<li><a href="apresentacao.html">Apresentações</a></li>
-<li><a href="conteudos.html">Conteúdos</a></li>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="galeria.html">Galeria</a></li>
+      <li><a href="apresentacao.html">Apresentações</a></li>
+      <li><a href="conteudos.html">Conteúdos</a></li>
 
-</ul>
+    </ul>
 
-</nav>
-
-
-
-<header>
-
-<h1>Apresentações dos Trabalhos</h1>
-
-<p>Visualize os slides apresentados pelos estudantes.</p>
-
-</header>
+  </nav>
 
 
 
-<div class="container">
+  <header>
 
+    <h1>Apresentações dos Trabalhos</h1>
 
-<!-- GALERIA DE APRESENTAÇÕES -->
+    <p>Visualize os slides apresentados pelos estudantes.</p>
 
-<section class="galeria">
-
-<div class="card" onclick="abrirPDF('pdf/conhecimento-financeiro.pdf')">
-
-<canvas class="thumb" data-pdf="pdf/conhecimento-financeiro.pdf"></canvas>
-<h3>Conhecimento Financeiro</h3>
-</div>
-
-
-<div class="card" onclick="abrirPDF('pdf/defincoes-e-metas.pdf')">
-
-<canvas class="thumb" data-pdf="pdf/defincoes-e-metas.pdf"></canvas>
-<h3>Definições e Metas</h3>
-</div>
+  </header>
 
 
 
-
-<div class="card" onclick="abrirPDF('pdf/trabalho-ed-financeira.pdf')">
-
-<canvas class="thumb" data-pdf="pdf/trabalho-ed-financeira.pdf"></canvas>
-<h3>Trabalho Educação Financeira</h3>
-
-</div>
-
-
-<div class="card" onclick="abrirPDF('pdf/história-do-dinheiro-externo.pdf')">
-
-<canvas class="thumb" data-pdf="pdf/história-do-dinheiro-externo.pdf"></canvas>
-<h3>História do Dinheiro Externo</h3>
-</div>
-
-
-</section>
-
-</div>
-
-<!-- VISUALIZADOR DE SLIDES -->
-
-<div id="visualizador">
-
-<canvas id="pdf-render"></canvas>
-
-
-<div class="controles">
-
-<button id="prev">❮</button>
-<button id="next">❯</button>
-
-</div>
-
-
-
-<!-- FIM DA APRESENTAÇÃO -->
-
-<div id="fim-apresentacao">
-
-<div class="fim-box">
-
-<h2>Fim da apresentação</h2>
-
-<p>Você chegou ao último slide.</p>
-
-<div class="fim-botoes">
-
-<button onclick="reiniciarSlides()">🔁 Recomeçar</button>
-
-<button onclick="voltarGaleria()">📚 Voltar</button>
-
-<button onclick="fechar()">❌ Fechar</button>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-<!-- Footer -->
-<footer id="rodape">
   <div class="container">
-    <div class="footer-content">
-      <div class="footer-brand">
-        <span class="brand-title">Projeto Educação Financeira</span>
-        <p class="brand-desc">
-          Exposição de trabalhos desenvolvidos pelos estudantes sobre educação financeira,
-          apresentando pesquisas, produções e reflexões realizadas em sala de aula.
-        </p>
+
+
+    <!-- GALERIA DE APRESENTAÇÕES -->
+
+    <section class="galeria">
+
+      <div class="card" onclick="abrirPDF('pdf/conhecimento-financeiro.pdf')">
+
+        <canvas class="thumb" data-pdf="pdf/conhecimento-financeiro.pdf"></canvas>
+        <h3>Conhecimento Financeiro</h3>
       </div>
-      <div class="footer-divider"></div>
-      <div class="footer-bottom">
-        <span class="footer-copy">© 2026 Marcelo Botura · Desenvolvido para fins educacionais</span>
-        <a href="https://www.youtube.com/@sabormatematica" target="_blank" class="yt-link" aria-label="YouTube @sabormatematica">
-          <svg class="yt-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" fill="currentColor"/>
-            <polygon points="9.75,15.02 15.5,12 9.75,8.98 9.75,15.02" fill="#0a0a0a"/>
-          </svg>
-          <span>@sabormatematica</span>
-        </a>
+
+
+      <div class="card" onclick="abrirPDF('pdf/defincoes-e-metas.pdf')">
+
+        <canvas class="thumb" data-pdf="pdf/defincoes-e-metas.pdf"></canvas>
+        <h3>Definições e Metas</h3>
+      </div>
+
+
+
+
+      <div class="card" onclick="abrirPDF('pdf/trabalho-ed-financeira.pdf')">
+
+        <canvas class="thumb" data-pdf="pdf/trabalho-ed-financeira.pdf"></canvas>
+        <h3>Trabalho Educação Financeira</h3>
+
+      </div>
+
+      <div class="card" onclick="abrirPDF('pdf/preparacao-para-o-futuro.pdf')">
+
+        <canvas class="thumb" data-pdf="pdf/preparacao-para-o-futuro.pdf"></canvas>
+        <h3>Preparação para o Futuro</h3>
+      </div>
+
+      <div class="card" onclick="abrirPDF('pdf/história-do-dinheiro-externo.pdf')">
+
+        <canvas class="thumb" data-pdf="pdf/história-do-dinheiro-externo.pdf"></canvas>
+        <h3>História do Dinheiro Externo</h3>
+      </div>
+
+    </section>
+
+  </div>
+
+  <!-- VISUALIZADOR DE SLIDES -->
+
+  <div id="visualizador">
+
+    <canvas id="pdf-render"></canvas>
+
+
+    <div class="controles">
+
+      <button id="prev">❮</button>
+      <button id="next">❯</button>
+
+    </div>
+
+
+
+    <!-- FIM DA APRESENTAÇÃO -->
+
+    <div id="fim-apresentacao">
+
+      <div class="fim-box">
+
+        <h2>Fim da apresentação</h2>
+
+        <p>Você chegou ao último slide.</p>
+
+        <div class="fim-botoes">
+
+          <button onclick="reiniciarSlides()">🔁 Recomeçar</button>
+
+          <button onclick="voltarGaleria()">📚 Voltar</button>
+
+          <button onclick="fechar()">❌ Fechar</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!-- Footer -->
+  <footer id="rodape">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="brand-title">Projeto Educação Financeira</span>
+          <p class="brand-desc">
+            Exposição de trabalhos desenvolvidos pelos estudantes sobre educação financeira,
+            apresentando pesquisas, produções e reflexões realizadas em sala de aula.
+          </p>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+          <span class="footer-copy">© 2026 Marcelo Botura · Desenvolvido para fins educacionais</span>
+          <a href="https://www.youtube.com/@sabormatematica" target="_blank" class="yt-link"
+            aria-label="YouTube @sabormatematica">
+            <svg class="yt-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"
+                fill="currentColor" />
+              <polygon points="9.75,15.02 15.5,12 9.75,8.98 9.75,15.02" fill="#0a0a0a" />
+            </svg>
+            <span>@sabormatematica</span>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
-<!-- Fim Footer -->
+  </footer>
+  <!-- Fim Footer -->
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.min.js"></script>
 
-<script src="js/apresentacao.js"></script>
+  <script src="js/apresentacao.js"></script>
 
-<script>
+  <script>
 
-const toggle=document.querySelector(".menu-toggle");
-const menu=document.querySelector(".nav-links");
+    const toggle = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".nav-links");
 
-toggle.onclick=()=>{
+    toggle.onclick = () => {
 
-menu.classList.toggle("active");
+      menu.classList.toggle("active");
 
-}
+    }
 
-</script>
+  </script>
 
 </body>
+
 </html>

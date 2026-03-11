@@ -3,133 +3,134 @@
 
 <head>
 
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Galeria de Trabalhos</title>
+  <title>Galeria de Trabalhos</title>
 
-<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 
-<link rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 
 </head>
 
 <body>
 
 
-<!-- NAVBAR -->
-<nav>
+  <!-- NAVBAR -->
+  <nav>
 
-<div class="logo">EduFinanceira</div>
+    <div class="logo">EduFinanceira</div>
 
-<div class="menu-toggle">☰</div>
+    <div class="menu-toggle">☰</div>
 
-<ul class="nav-links">
+    <ul class="nav-links">
 
-<li><a href="index.html">Início</a></li>
-<li><a href="galeria.html">Galeria</a></li>
-<li><a href="apresentacao.html">Apresentações</a></li>
-<li><a href="conteudos.html">Conteúdos</a></li>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="galeria.html">Galeria</a></li>
+      <li><a href="apresentacao.html">Apresentações</a></li>
+      <li><a href="conteudos.html">Conteúdos</a></li>
 
-</ul>
+    </ul>
 
-</nav>
-
-
-
-<header>
-
-<h1>Mural de Exposição</h1>
-
-<p>Clique nas imagens para ampliar os detalhes dos projetos.</p>
-
-</header>
-
-
-<div class="container">
-
-<div class="masonry-gallery" id="galeria-fotos"></div>
-
-</div>
+  </nav>
 
 
 
+  <header>
 
-<script>
+    <h1>Mural de Exposição</h1>
 
-const fotos = [
+    <p>Clique nas imagens para ampliar os detalhes dos projetos.</p>
 
-"IMG_20260307_152257.jpg",
-"IMG_20260307_152438.jpg",
-"IMG_20260307_152625.jpg",
-"IMG_20260307_152836.jpg",
-"IMG_20260307_153246.jpg",
-"IMG_20260307_153407.jpg",
-"IMG_20260307_153412.jpg",
-"IMG_20260307_154514.jpg",
-"IMG_20260307_154526.jpg",
-"IMG_20260307_154926.jpg",
-"IMG_20260307_154931.jpg",
-"IMG_20260307_155132.jpg",
-"IMG_20260307_155137.jpg",
-"IMG_20260307_155355.jpg",
-"IMG_20260307_155406.jpg",
-"IMG_20260307_155516.jpg",
-"IMG_20260307_155522.jpg",
-"IMG_20260307_155805.jpg",
-"IMG_20260307_155809.jpg",
-"IMG_20260307_160316.jpg",
-"IMG_20260307_160320.jpg",
-"IMG_20260307_160419.jpg",
-"IMG_20260307_160434.jpg",
-"IMG_20260307_160453.jpg",
-"IMG_20260307_160832.jpg",
-"IMG_20260307_160837.jpg",
-"IMG_20260307_161007.jpg",
-"IMG_20260307_161013.jpg",
-"IMG_20260307_161256.jpg",
-"IMG_20260307_161301.jpg",
-"IMG_20260307_161518.jpg",
-"IMG_20260307_161523.jpg",
-"IMG_20260307_161926.jpg",
-"IMG_20260307_161933.jpg",
-"IMG_20260307_162209.jpg",
-"IMG_20260307_162213.jpg",
-"IMG_20260307_162308.jpg",
-"IMG_20260307_162312.jpg",
-"IMG_20260307_163223.jpg",
-"IMG_20260307_163231.jpg",
-"IMG_20260307_163236.jpg",
-"IMG_20260307_163241.jpg",
-"IMG_20260307_163637.jpg",
-"IMG_20260307_163643.jpg",
-"IMG_20260307_164507.jpg",
-"IMG_20260307_164512.jpg",
-"IMG_20260307_164641.jpg",
-"IMG_20260307_164645.jpg",
-"IMG_20260307_164850.jpg",
-"IMG_20260307_164854.jpg",
-"IMG_20260307_165010.jpg",
-"IMG_20260307_165014.jpg",
-"IMG_20260307_165129.jpg",
-"IMG_20260307_165132.jpg",
-"MVIMG_20260307_153314.jpg",
-"MVIMG_20260307_163706.jpg",
-"MVIMG_20260307_163837.jpg",
-"MVIMG_20260307_164254.jpg",
-"MVIMG_20260307_164654.jpg"
+  </header>
 
-];
 
-const container=document.getElementById("galeria-fotos");
+  <div class="container">
 
-let html="";
+    <div class="masonry-gallery" id="galeria-fotos"></div>
 
-fotos.forEach(f=>{
+  </div>
 
-html+=`
+
+
+
+  <script>
+
+    const fotos = [
+
+      "IMG_20260307_152257.jpg",
+      "IMG_20260307_152438.jpg",
+      "IMG_20260307_152625.jpg",
+      "IMG_20260307_152836.jpg",
+      "IMG_20260307_153246.jpg",
+      "IMG_20260307_153407.jpg",
+      "IMG_20260307_153412.jpg",
+      "IMG_20260307_154514.jpg",
+      "IMG_20260307_154526.jpg",
+      "IMG_20260307_154926.jpg",
+      "IMG_20260307_154931.jpg",
+      "IMG_20260307_155132.jpg",
+      "IMG_20260307_155137.jpg",
+      "IMG_20260307_155355.jpg",
+      "IMG_20260307_155406.jpg",
+      "IMG_20260307_155516.jpg",
+      "IMG_20260307_155522.jpg",
+      "IMG_20260307_155805.jpg",
+      "IMG_20260307_155809.jpg",
+      "IMG_20260307_160316.jpg",
+      "IMG_20260307_160320.jpg",
+      "IMG_20260307_160419.jpg",
+      "IMG_20260307_160434.jpg",
+      "IMG_20260307_160453.jpg",
+      "IMG_20260307_160832.jpg",
+      "IMG_20260307_160837.jpg",
+      "IMG_20260307_161007.jpg",
+      "IMG_20260307_161013.jpg",
+      "IMG_20260307_161256.jpg",
+      "IMG_20260307_161301.jpg",
+      "IMG_20260307_161518.jpg",
+      "IMG_20260307_161523.jpg",
+      "IMG_20260307_161926.jpg",
+      "IMG_20260307_161933.jpg",
+      "IMG_20260307_162209.jpg",
+      "IMG_20260307_162213.jpg",
+      "IMG_20260307_162308.jpg",
+      "IMG_20260307_162312.jpg",
+      "IMG_20260307_163223.jpg",
+      "IMG_20260307_163231.jpg",
+      "IMG_20260307_163236.jpg",
+      "IMG_20260307_163241.jpg",
+      "IMG_20260307_163637.jpg",
+      "IMG_20260307_163643.jpg",
+      "IMG_20260307_164507.jpg",
+      "IMG_20260307_164512.jpg",
+      "IMG_20260307_164641.jpg",
+      "IMG_20260307_164645.jpg",
+      "IMG_20260307_164850.jpg",
+      "IMG_20260307_164854.jpg",
+      "IMG_20260307_165010.jpg",
+      "IMG_20260307_165014.jpg",
+      "IMG_20260307_165129.jpg",
+      "IMG_20260307_165132.jpg",
+      "MVIMG_20260307_153314.jpg",
+      "MVIMG_20260307_163706.jpg",
+      "MVIMG_20260307_163837.jpg",
+      "MVIMG_20260307_164254.jpg",
+      "IMG_20260311_110958.jpg",
+      "IMG_20260311_110958.jpg",
+      "MVIMG_20260307_164654.jpg"
+
+    ];
+
+    const container = document.getElementById("galeria-fotos");
+
+    let html = "";
+
+    fotos.forEach(f => {
+
+      html += `
 
 <div class="gallery-item">
 
@@ -143,59 +144,63 @@ html+=`
 
 `;
 
-});
+    });
 
-container.innerHTML=html;
+    container.innerHTML = html;
 
-</script>
+  </script>
 
 
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
-<script>
+  <script>
 
-Fancybox.bind("[data-fancybox]",{});
+    Fancybox.bind("[data-fancybox]", {});
 
-</script>
+  </script>
 
-<script>
+  <script>
 
-const toggle=document.querySelector(".menu-toggle");
-const menu=document.querySelector(".nav-links");
+    const toggle = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".nav-links");
 
-toggle.onclick=()=>{
+    toggle.onclick = () => {
 
-menu.classList.toggle("active");
+      menu.classList.toggle("active");
 
-}
+    }
 
-</script>
+  </script>
 
-<!-- Footer -->
-<footer id="rodape">
-  <div class="container">
-    <div class="footer-content">
-      <div class="footer-brand">
-        <span class="brand-title">Projeto Educação Financeira</span>
-        <p class="brand-desc">
-          Exposição de trabalhos desenvolvidos pelos estudantes sobre educação financeira,
-          apresentando pesquisas, produções e reflexões realizadas em sala de aula.
-        </p>
-      </div>
-      <div class="footer-divider"></div>
-      <div class="footer-bottom">
-        <span class="footer-copy">© 2026 Marcelo Botura · Desenvolvido para fins educacionais</span>
-        <a href="https://www.youtube.com/@sabormatematica" target="_blank" class="yt-link" aria-label="YouTube @sabormatematica">
-          <svg class="yt-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" fill="currentColor"/>
-            <polygon points="9.75,15.02 15.5,12 9.75,8.98 9.75,15.02" fill="#0a0a0a"/>
-          </svg>
-          <span>@sabormatematica</span>
-        </a>
+  <!-- Footer -->
+  <footer id="rodape">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="brand-title">Projeto Educação Financeira</span>
+          <p class="brand-desc">
+            Exposição de trabalhos desenvolvidos pelos estudantes sobre educação financeira,
+            apresentando pesquisas, produções e reflexões realizadas em sala de aula.
+          </p>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+          <span class="footer-copy">© 2026 Marcelo Botura · Desenvolvido para fins educacionais</span>
+          <a href="https://www.youtube.com/@sabormatematica" target="_blank" class="yt-link"
+            aria-label="YouTube @sabormatematica">
+            <svg class="yt-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"
+                fill="currentColor" />
+              <polygon points="9.75,15.02 15.5,12 9.75,8.98 9.75,15.02" fill="#0a0a0a" />
+            </svg>
+            <span>@sabormatematica</span>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
-<!-- Fim Footer -->
+  </footer>
+  <!-- Fim Footer -->
 </body>
+
 </html>
